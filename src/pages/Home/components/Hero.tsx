@@ -14,7 +14,7 @@ const Hero = () => {
     <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-36 ">
       <div className="max-w-4xl">
         <h1 className="block text-3xl font-semibold text-white mb-5 sm:text-4xl md:text-5xl">
-          The Technology and Innovation Law Plan
+          The Technology and Innovation Law Firm
         </h1>
 
         <button className="inline-flex cursor-pointer group transition ease-in-out delay-150  duration-300 items-center justify-center  bg-[#ED1B24] px-4 py-3 text-xl font-light text-white">
