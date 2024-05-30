@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Corporate, Intellectual, Regulations } from "../../../assets";
 import { CgArrowRightO } from "react-icons/cg";
 import { link } from "fs";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Specialist = () => {
+  const location = useLocation();
+  const specialistRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (location.state) {
+      const { scrollTo } = location.state;
+      if (scrollTo === "specialist" && specialistRef.current) {
+        specialistRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location.state]);
+
   const specialistData = [
     {
       link: "/corporate-law",
@@ -28,8 +40,9 @@ const Specialist = () => {
         "We simplify regulations, empowering you to make informed decisions for your business. We also offer hassle-free licensing facilitation across various tech areas. Trust us to be your guiding light! 🌟🚀🔒",
     },
   ];
+
   return (
-    <div className="bg-[#1D1D1D]">
+    <div id="specialist" className="bg-[#1D1D1D]">
       <div className="max-w-[85rem] mx-auto px-4 pt-4 pb-10 sm:px-6 lg:px-8">
         <h1 className="text-white py-10 font-semibold text-3xl">
           We are <span className="italic">specialist!</span>

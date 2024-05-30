@@ -36,6 +36,7 @@ const IntellectualProperty = () => {
               className="flex flex-col bg-right-bottom bg-no-repeat p-5  lg:p-8 bg-[#ED1B24]"
               style={{
                 backgroundImage: `url(${BgQuote})`,
+                backgroundSize: "15rem"
               }}
             >
               <CgQuote className="text-7xl" />

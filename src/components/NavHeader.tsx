@@ -12,7 +12,7 @@ const NavHeader = () => {
     },
     {
       title: "Our specialities",
-      link: "/our-specialities",
+      link: "/#specialist",
     },
     {
       title: "Our story",

@@ -14,7 +14,9 @@ export { default as News5 } from "./images/img_news5.svg";
 export { default as IntellectualBgImage } from "./images/bg_img_intellectual_property.webp";
 export { default as CorporateLawBgImage } from "./images/bg_img_corporate_law.webp";
 export { default as ReguLicenseBgImage } from "./images/bg_img_regulations_and_licensing.webp";
+export { default as StoryBgImage } from "./images/bg_img_our_story.webp";
 export { default as BgQuote } from "./images/bg_quote.svg";
+export { default as BgQuoteBlack } from "./images/bg_quote_black.svg";
 
 //icons
 export { default as Corporate } from "./icons/ic_corporate.svg";
@@ -32,3 +34,12 @@ export { default as DigitalHealth } from "./icons/ic_digital_health.svg";
 export { default as DigitalMedia } from "./icons/ic_digital_media.svg";
 export { default as Software } from "./icons/ic_software.svg";
 export { default as EGaming } from "./icons/ic_electronic_gaming.svg";
+
+
+//photos
+export { default as Kofi } from "./photos/pt_kofi.svg";
+export { default as Emmanuel } from "./photos/pt_emmanuel_saah.svg";
+export { default as Augustina } from "./photos/pt_augistina.svg";
+export { default as Vanessa } from "./photos/pt_vanessa.svg";
+export { default as Abena } from "./photos/pt_abina_tonia.svg";
+export { default as Nobody } from "./photos/pt_mrNobody.svg";
