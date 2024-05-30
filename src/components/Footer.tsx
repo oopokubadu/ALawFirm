@@ -1,15 +1,12 @@
 import React from "react";
 import { LogoWhite } from "../assets";
-import { GrInstagram } from "react-icons/gr";
-import { BsTwitterX } from "react-icons/bs";
-import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="px-4 py-10 bg-[#262626]">
       <div className="mx-auto flex max-w-[85rem] flex-col items-center justify-between space-y-4 lg:flex-row lg:space-y-0 text-white">
-        <div className="flex flex-col mx-auto space-y-2 text-center text-sm font-light lg:flex-row lg:space-x-20 lg:space-y-0 lg:text-left">
+        <div className="flex flex-col items-center mx-auto space-y-8 text-center text-sm font-light lg:flex-row lg:space-x-20 lg:space-y-0 lg:text-left">
           <a href="/">
             {/* Logo */}
             <div className="h-7 text-heading">
