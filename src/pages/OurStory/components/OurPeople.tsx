@@ -54,7 +54,7 @@ const OurPeople = () => {
         The brains behind the awesomeness
       </h1>
 
-      <div className="grid gap-5 mx-auto sm:grid-cols-2 lg:grid-cols-5 lg:max-w-screen-xl text-white">
+      <div className="grid gap-5 mx-auto sm:grid-cols-2 lg:grid-cols-5 justify-center lg:max-w-screen-xl text-white">
         {BoardMembers.map((data, index) => (
           <div key={index}>
             <div className="relative mb-4">

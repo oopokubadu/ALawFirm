@@ -9,8 +9,8 @@ const Footer = () => {
         <div className="flex flex-col items-center mx-auto space-y-8 text-center text-sm font-light lg:flex-row lg:space-x-20 lg:space-y-0 lg:text-left">
           <a href="/">
             {/* Logo */}
-            <div className="h-7 text-heading">
-              <img className="w-24" src={LogoWhite} alt="" />
+            <div className="h-7 my-4 text-heading">
+              <img className="w-24 " src={LogoWhite} alt="" />
             </div>
           </a>
           <div className="font-light">
