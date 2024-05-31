@@ -40,9 +40,9 @@ export { default as EGaming } from "./icons/ic_electronic_gaming.svg";
 
 
 //photos
-export { default as Kofi } from "./photos/pt_kofi.svg";
-export { default as Emmanuel } from "./photos/pt_emmanuel_saah.svg";
-export { default as Augustina } from "./photos/pt_augistina.svg";
-export { default as Vanessa } from "./photos/pt_vanessa.svg";
-export { default as Abena } from "./photos/pt_abina_tonia.svg";
-export { default as Nobody } from "./photos/pt_mrNobody.svg";
+export { default as Kofi } from "./photos/Kofi-Owusu-Nhyira.svg";
+export { default as Emmanuel } from "./photos/Emmanuel-Saah.svg";
+export { default as Augustina } from "./photos/Augustina-Odame.svg";
+export { default as Vanessa } from "./photos/Vanesa-Akuetteh.svg";
+export { default as Abena } from "./photos/Abiba-Tornia.svg";
+export { default as Nobody } from "./photos/Mr-Nobody.svg";
