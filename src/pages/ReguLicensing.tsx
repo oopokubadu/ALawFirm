@@ -3,6 +3,7 @@ import { BsArrowUpRightCircle } from "react-icons/bs";
 import { BgQuote, ReguLicenseBgImage } from "../assets";
 import { CgQuote } from "react-icons/cg";
 import FocusAreas from "./Home/components/FocusAreas";
+import { ContactUsModal } from "../components/ContactUsModal";
 
 const ReguLicensing = () => {
   return (
@@ -17,14 +18,11 @@ const ReguLicensing = () => {
       >
         <div className="max-w-[85rem] mx-auto px-4 lg:px-6 flex h-[70vh] items-end">
           <div>
-            <h1 className="font-bold max-w-3xl text-white text-4xl lg:text-5xl">
+            <h1 className="font-bold max-w-3xl text-white text-4xl mb-6 lg:text-5xl">
               Regulations and Licensing
             </h1>
 
-            <button className="inline-flex mt-10 cursor-pointer group transition ease-in-out delay-150  duration-300 items-center justify-center  bg-[#ED1B24] px-4 py-3 text-xl font-light text-white">
-              <span className="group-hover:underline"> Talk to us </span>
-              <BsArrowUpRightCircle className="ml-5 h-5 w-5 group-hover:rotate-45" />
-            </button>
+            <ContactUsModal />
           </div>
         </div>
       </div>
@@ -36,7 +34,7 @@ const ReguLicensing = () => {
               className="flex flex-col bg-right-bottom bg-no-repeat p-5  lg:p-8 bg-[#262626]"
               style={{
                 backgroundImage: `url(${BgQuote})`,
-                backgroundSize: "15rem"
+                backgroundSize: "15rem",
               }}
             >
               <CgQuote className="text-7xl" />

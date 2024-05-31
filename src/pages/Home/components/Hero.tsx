@@ -8,6 +8,7 @@ import {
   Screenshot3,
   Screenshot4,
 } from "../../../assets";
+import { ContactUsModal } from "../../../components/ContactUsModal";
 
 const Hero = () => {
   return (
@@ -17,10 +18,7 @@ const Hero = () => {
           The Technology and Innovation Law Firm
         </h1>
 
-        <button className="inline-flex cursor-pointer group transition ease-in-out delay-150  duration-300 items-center justify-center  bg-[#ED1B24] px-4 py-3 text-xl font-light text-white">
-          <span className="group-hover:underline"> Talk to us </span>
-          <BsArrowUpRightCircle className="ml-5 h-5 w-5 group-hover:rotate-45" />
-        </button>
+        <ContactUsModal />
       </div>
 
       <div className="mt-16  ">

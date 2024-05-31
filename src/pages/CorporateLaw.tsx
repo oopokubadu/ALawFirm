@@ -3,6 +3,7 @@ import { BsArrowUpRightCircle } from "react-icons/bs";
 import { BgQuote, CorporateLawBgImage } from "../assets";
 import { CgQuote } from "react-icons/cg";
 import FocusAreas from "./Home/components/FocusAreas";
+import { ContactUsModal } from "../components/ContactUsModal";
 
 const CorporateLaw = () => {
   return (
@@ -17,14 +18,11 @@ const CorporateLaw = () => {
       >
         <div className="max-w-[85rem] mx-auto px-4 lg:px-6 flex h-[70vh] items-end">
           <div>
-            <h1 className="font-bold max-w-3xl text-white text-4xl lg:text-5xl">
+            <h1 className="font-bold max-w-3xl text-white mb-6 text-4xl lg:text-5xl">
               Corporate Law
             </h1>
 
-            <button className="inline-flex mt-10 cursor-pointer group transition ease-in-out delay-150  duration-300 items-center justify-center  bg-[#ED1B24] px-4 py-3 text-xl font-light text-white">
-              <span className="group-hover:underline"> Talk to us </span>
-              <BsArrowUpRightCircle className="ml-5 h-5 w-5 group-hover:rotate-45" />
-            </button>
+         <ContactUsModal/>
           </div>
         </div>
       </div>
