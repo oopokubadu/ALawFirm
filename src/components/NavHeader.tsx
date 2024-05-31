@@ -13,7 +13,7 @@ const NavHeader = () => {
     },
     {
       title: "Our specialities",
-      link: "/#specialist",
+      link: "/home#specialist",
     },
     {
       title: "Our story",
@@ -68,20 +68,22 @@ const NavHeader = () => {
           <div className="flex-1"></div>
           <div className="hidden space-x-1.5 md:flex">
             {navData.map((data, index) => (
-              <NavLink
-                key={index}
-                to={data.link}
-                className={({ isActive }) =>
-                  `inline-flex text-[#CECECE] relative group cursor-pointer items-center justify-center px-4 py-2.5 text-base font-light ${
-                    isActive
-                      ? "font-bold text-white border-b-2 border-[#ED1B24]"
-                      : ""
-                  }`
-                }
-              >
-                {data.title}
-                <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-[#ED1B24] group-hover:w-full"></span>
-              </NavLink>
+          <NavLink
+          key={index}
+          to={data.link}
+          className={({ isActive }) =>
+            data.title === "Our specialities"
+              ? "inline-flex text-[#CECECE] relative group cursor-pointer items-center justify-center px-4 py-2.5 text-base font-light"
+              : `inline-flex text-[#CECECE] relative group cursor-pointer items-center justify-center px-4 py-2.5 text-base font-light ${
+                  isActive
+                    ? "font-bold text-white border-b-2 border-[#ED1B24]"
+                    : ""
+                }`
+          }
+        >
+          {data.title}
+          <span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-[#ED1B24] group-hover:w-full"></span>
+        </NavLink>
             ))}
           </div>
 
