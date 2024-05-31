@@ -8,7 +8,7 @@ const NewsInsights = () => {
   return (
     <div>
       <div
-        className="h-[100vh] flex pt-10 items-center"
+        className="h-[80vh] flex pt-10 items-center"
         style={{
           backgroundImage: `url(${BgBlog})`,
           backgroundSize: "cover",
