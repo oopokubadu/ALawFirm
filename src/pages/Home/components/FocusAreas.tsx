@@ -6,17 +6,14 @@ import {
   Blockchain,
   CommNet,
   ConsElect,
-  Corporate,
   DataStorage,
   DigitalHealth,
   DigitalMedia,
   EGaming,
-  Intellectual,
   Internet,
   Regulations,
   Software,
 } from "../../../assets";
-import { CgArrowRightO } from "react-icons/cg";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 

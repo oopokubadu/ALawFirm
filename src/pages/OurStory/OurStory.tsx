@@ -7,14 +7,14 @@ const OurStory = () => {
   return (
     <div>
       <div
-        className="h-[100vh]"
+        className="h-[80vh]"
         style={{
           backgroundImage: `url(${StoryBgImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="max-w-[85rem] mx-auto px-4 lg:px-6 flex h-[90vh] items-end">
+        <div className="max-w-[85rem] mx-auto px-4 lg:px-6 flex h-[70vh] items-end">
           <div>
             <h1 className="font-bold max-w-3xl text-white text-4xl lg:text-5xl">
               The Eight Geeks Story

@@ -11,12 +11,15 @@ export { default as News2 } from "./images/img_news2.svg";
 export { default as News3 } from "./images/img_news4.svg";
 export { default as News4 } from "./images/img_news4.svg";
 export { default as News5 } from "./images/img_news5.svg";
+export { default as News6 } from "./images/img_news6.svg";
 export { default as IntellectualBgImage } from "./images/bg_img_intellectual_property.webp";
 export { default as CorporateLawBgImage } from "./images/bg_img_corporate_law.webp";
 export { default as ReguLicenseBgImage } from "./images/bg_img_regulations_and_licensing.webp";
 export { default as StoryBgImage } from "./images/bg_img_our_story.webp";
 export { default as BgQuote } from "./images/bg_quote.svg";
 export { default as BgQuoteBlack } from "./images/bg_quote_black.svg";
+export { default as BgBlog } from "./images/img_bg_blog.webp";
+export { default as SafeImg } from "./images/img_safe.svg";
 
 //icons
 export { default as Corporate } from "./icons/ic_corporate.svg";

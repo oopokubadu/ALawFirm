@@ -6,6 +6,7 @@ import IntellectualProperty from "../pages/IntellectualProperty";
 import CorporateLaw from "../pages/CorporateLaw";
 import ReguLicensing from "../pages/ReguLicensing";
 import OurStory from "../pages/OurStory/OurStory";
+import NewsInsights from "../pages/newsInsightPage/NewsInsights";
 
 const AppRouter = () => {
   return (
@@ -20,6 +21,7 @@ const AppRouter = () => {
         <Route path="corporate-law" element={<CorporateLaw />} />
         <Route path="regulations-and-licensing" element={<ReguLicensing />} />
         <Route path="our-story" element={<OurStory />} />
+        <Route path="news-and-insights" element={<NewsInsights />} />
       </Route>
     </Routes>
   );

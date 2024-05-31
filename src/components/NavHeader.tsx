@@ -28,7 +28,7 @@ const NavHeader = () => {
     },
   ];
   return (
-    <div className="backdrop-blur-sm bg-gray/50 w-full fixed z-50 top-0 left-0 ">
+    <div className="backdrop-blur-lg bg-gray/50 w-full fixed z-50 top-0 left-0 ">
       <nav className="relative max-w-[85rem]  mx-auto z-20 flex shrink-0 items-center space-x-2 py-4 px-4 sm:px-6">
         <a href="/">
           {/* Logo */}
