@@ -126,11 +126,11 @@ const FocusAreas = () => {
           <div className="my-4">
             {specialistData.map((data, index) => (
               <SwiperSlide key={index}>
-                <div className=" bg-[#262626] hover:bg-[#1D1D1D] h-[14rem] border-4 border-transparent  hover:border-[#343434] transition ease-in-out duration-200 p-6">
+                <div className=" bg-[#262626] hover:bg-[#1D1D1D] h-[14rem] border-4 border-transparent  hover:border-[#343434] transition ease-in-out duration-200 p-4">
                   <img
                     src={data.icon}
                     alt=""
-                    className="w-20 h-20 mx-auto bg-[#232323] rounded-full p-4"
+                    className="w-20 h-20 mx-auto bg-[#232323] rounded-full p-5"
                   />
                   <h6 className="my-5 text-lg text-center  font-medium  text-white">
                     {data.title}
