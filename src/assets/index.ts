@@ -46,3 +46,8 @@ export { default as Augustina } from "./photos/Augustina-Odame.svg";
 export { default as Vanessa } from "./photos/Vanesa-Akuetteh.svg";
 export { default as Abena } from "./photos/Abiba-Tornia.svg";
 export { default as Nobody } from "./photos/Mr-Nobody.svg";
+
+
+
+//gifs
+export { default as EmptyDrawer } from "./gifs/drawer.json";

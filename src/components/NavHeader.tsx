@@ -24,6 +24,10 @@ const NavHeader = () => {
       link: "/news-and-insights",
     },
     {
+      title: "Careers",
+      link: "/careers",
+    },
+    {
       title: "Contact",
       link: "/contact",
     },

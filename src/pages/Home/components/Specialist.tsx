@@ -44,14 +44,28 @@ const Specialist = () => {
   return (
     <div id="specialist" className="bg-[#1D1D1D]">
       <div className="max-w-[85rem] mx-auto px-4 pt-4 pb-10 sm:px-6 lg:px-8">
-        <h1 className="text-white py-10 font-semibold text-3xl">
+        <h1
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-duration="3000"
+          data-aos-once="true"
+          className="text-white py-10 font-semibold text-3xl"
+        >
           We are <span className="italic">specialist!</span>
         </h1>
-        <div className="grid gap-4 sm:grid-cols-3 my-4">
+        <div
+          className="grid gap-4 sm:grid-cols-3 my-4"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-duration="4000"
+          data-aos-once="true"
+        >
           {specialistData.map((data, index) => (
             <Link
+            
               to={data.link}
               key={index}
+              
               className=" bg-[#262626] hover:bg-[#1D1D1D] border-4 border-transparent  hover:border-[#343434] transition ease-in-out duration-200 p-6"
             >
               <img src={data.icon} alt="" className="w-12 h-12" />

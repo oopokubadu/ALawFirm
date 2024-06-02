@@ -7,6 +7,8 @@ import CorporateLaw from "../pages/CorporateLaw";
 import ReguLicensing from "../pages/ReguLicensing";
 import OurStory from "../pages/OurStory/OurStory";
 import NewsInsights from "../pages/newsInsightPage/NewsInsights";
+import Careers from "../pages/Careers";
+import Contact from "../pages/Contact";
 
 const AppRouter = () => {
   return (
@@ -22,6 +24,8 @@ const AppRouter = () => {
         <Route path="regulations-and-licensing" element={<ReguLicensing />} />
         <Route path="our-story" element={<OurStory />} />
         <Route path="news-and-insights" element={<NewsInsights />} />
+        <Route path="Careers" element={<Careers />} />
+        <Route path="contact" element={<Contact />} />
       </Route>
     </Routes>
   );

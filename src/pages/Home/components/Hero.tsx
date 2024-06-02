@@ -14,14 +14,26 @@ const Hero = () => {
   return (
     <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-36 ">
       <div className="max-w-4xl">
-        <h1 className="block text-3xl font-semibold text-white mb-5 sm:text-4xl md:text-5xl">
+        <h1
+          data-aos="fade-up"
+          data-aos-offset="0"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          className="block text-3xl font-semibold text-white mb-5 sm:text-4xl md:text-5xl"
+        >
           The Technology and Innovation Law Firm
         </h1>
 
         <ContactUsModal />
       </div>
 
-      <div className="mt-16  ">
+      <div
+        className="mt-16"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-duration="2000"
+        data-aos-once="true"
+      >
         <Swiper
           spaceBetween={10}
           loop={true}
