@@ -91,7 +91,7 @@ const NavHeader = () => {
             ))}
           </div>
 
-          <Menu as="div" className="relative md:hidden z-50">
+          <Menu as="div" className="h-20 relative md:hidden z-50">
             <Menu.Button
               type="button"
               className="inline-flex cursor-pointer items-center justify-center rounded-xl p-2 font-semibold"
@@ -115,7 +115,7 @@ const NavHeader = () => {
                         to={data.link}
                         className={`${
                           active ? "bg-muted-1 text-heading" : "text-text"
-                        } flex w-full cursor-pointer items-center text-white px-4 py-2 text-sm font-semibold`}
+                        } flex w-full cursor-pointer  items-center text-white px-4 py-2 text-sm font-semibold`}
                       >
                         {data.title}
                       </NavLink>
