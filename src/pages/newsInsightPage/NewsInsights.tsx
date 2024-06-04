@@ -17,12 +17,24 @@ const NewsInsights = () => {
       >
         <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
           <div className="max-w-4xl text-center mx-auto">
-            <h1 className="block font-semibold text-white text-4xl md:text-5xl">
+            <h1
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              data-aos-once="true"
+              className="block font-semibold text-white text-4xl md:text-5xl"
+            >
               Digital Credit in Ghana: A Closer Look
             </h1>
           </div>
 
-          <div className="max-w-3xl text-center mx-auto">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            className="max-w-3xl text-center mx-auto"
+          >
             <p className="text-base md:text-lg font-light text-white">
               Last week, the Bank of Ghana posted a notice with a list of
               ninety-seven (97) unlicensed entities that are engaged in the
@@ -31,7 +43,13 @@ const NewsInsights = () => {
             </p>
           </div>
 
-          <div className="text-center">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            className="text-center"
+          >
             <button className="inline-flex cursor-pointer group transition ease-in-out delay-150  duration-300 items-center justify-center  bg-[#ED1B24] px-4 py-3 text-xl font-light text-white">
               <span className="group-hover:underline">
                 {" "}

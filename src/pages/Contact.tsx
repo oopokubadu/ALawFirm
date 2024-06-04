@@ -8,7 +8,14 @@ const Contact = () => {
         <div className="max-w-[85rem]  px-4 py-10 sm:px-6 lg:px-8 lg:pb-14 pt-32 mx-auto">
           <div className="grid items-center md:grid-cols-2 gap-8 lg:gap-12">
             <div>
-              <div className="mt-4 md:mb-12 max-w-sm">
+              <div
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-delay="200"
+                className="mt-4 md:mb-12 max-w-sm"
+              >
                 <h1 className="mb-4 font-semibold text-white text-4xl lg:text-5xl ">
                   Contact Us
                 </h1>
@@ -25,7 +32,13 @@ const Contact = () => {
               </div>
             </div>
 
-            <div>
+            <div
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              data-aos-once="true"
+              data-aos-delay="400"
+            >
               <div className="lg:max-w-lg lg:mx-auto lg:me-0 ms-auto">
                 <div className="p-4 sm:p-7 flex flex-col bg-white  shadow-lg ">
                   <h1 className="text-2xl font-bold">Get in touch</h1>
@@ -74,6 +87,11 @@ const Contact = () => {
           </div>
           <div className=" flex  w-full justify-center flex-wrap lg:flex-nowrap gap-y-6 gap-x-32 items-center p-5">
             <iframe
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              data-aos-once="true"
+              data-aos-delay="200"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.2176846023895!2d-0.14739396383064737!3d5.649981139431007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9d89c30a16fb%3A0xf06418245dd16bc2!2sEight%20Geeks%20%40%20Law!5e0!3m2!1sen!2sgh!4v1717323537447!5m2!1sen!2sgh"
               width="450"
               height="450"
@@ -82,7 +100,11 @@ const Contact = () => {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
             <div>
-              <div>
+              <div      data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            data-aos-delay="200">
                 <h3 className="text-3xl font-semibold mb-4 text-white">
                   Our location
                 </h3>

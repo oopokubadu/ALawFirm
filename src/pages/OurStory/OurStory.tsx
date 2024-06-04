@@ -16,7 +16,13 @@ const OurStory = () => {
       >
         <div className="max-w-[85rem] mx-auto px-4 lg:px-6 flex h-[70vh] items-end">
           <div>
-            <h1 className="font-bold max-w-3xl text-white text-4xl lg:text-5xl">
+            <h1
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              data-aos-once="true"
+              className="font-bold max-w-3xl text-white text-4xl lg:text-5xl"
+            >
               The Eight Geeks Story
             </h1>
           </div>
@@ -27,6 +33,10 @@ const OurStory = () => {
           {/* 1/3 and 2/3 */}
 
           <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            data-aos-once="true"
             className="flex flex-col bg-right-bottom text-white bg-no-repeat p-5  lg:p-8 bg-[#ED1B24]"
             style={{
               backgroundImage: `url(${BgQuote})`,
@@ -47,6 +57,10 @@ const OurStory = () => {
           </div>
 
           <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            data-aos-once="true"
             className="flex flex-col text-[#262626] bg-right-bottom  bg-no-repeat p-5  lg:p-8 bg-white"
             style={{
               backgroundImage: `url(${BgQuoteBlack})`,
@@ -66,7 +80,13 @@ const OurStory = () => {
               ecosystem.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-y-5 gap-x-36 p-5 lg:p-10 md:grid-cols-2 text-white bg-[#262626]">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            className="grid grid-cols-1 gap-y-5 gap-x-36 p-5 lg:p-10 md:grid-cols-2 text-white bg-[#262626]"
+          >
             <div>
               <h2 className="text-base font-bold text-[#ED1B24]">Philosophy</h2>
               <p className="mt-8 font-light text-sm">

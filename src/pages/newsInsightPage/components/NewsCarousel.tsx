@@ -72,7 +72,13 @@ const NewsCarousel = () => {
         modules={[Navigation, Pagination, Autoplay]}
         className="mySwiper"
       >
-        <div className="my-4">
+        <div
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+          data-aos-once="true"
+          className="my-4"
+        >
           {newsData.map((data, index) => (
             <SwiperSlide key={index}>
               <div className="group relative">

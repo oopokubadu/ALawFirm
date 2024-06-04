@@ -6,11 +6,12 @@ import ScrollToComponent from "../components/ScrollToComponent";
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="relative">
       <NavHeader />
       <ScrollToComponent selector="#specialist" />
       <Outlet/>
       <Footer/>
+      <div className="fixed bottom-0 left-0 right-0 bg-gradient-to-t from-[#262626] h-48 "></div>
     </div>
   );
 };

@@ -56,8 +56,16 @@ const OurPeople = () => {
 
       <div className="grid gap-5 mx-auto sm:grid-cols-2 lg:grid-cols-5 justify-center lg:max-w-screen-xl text-white">
         {BoardMembers.map((data, index) => (
-          <div key={index} className="">
-            <div className="relative bg-[#262626] mb-4">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            data-aos-once="true"
+            data-aos-delay={index * 200}
+            key={index}
+            className=""
+          >
+            <div className="relative bg-[#262626] mb-4 overflow-hidden">
               <img
                 className=" object-cover transition-all duration-300 hover:scale-110"
                 src={data.image}

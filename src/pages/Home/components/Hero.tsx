@@ -1,8 +1,8 @@
 import React from "react";
-import { BsArrowUpRightCircle } from "react-icons/bs";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
+  HeroVideo,
   Screenshot1,
   Screenshot2,
   Screenshot3,
@@ -40,7 +40,7 @@ const Hero = () => {
           slidesPerView={1}
           navigation={false}
           autoplay={{
-            delay: 5000,
+            delay: 20000,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -49,6 +49,15 @@ const Hero = () => {
           modules={[Navigation, Pagination, Autoplay]}
           className="mySwiper"
         >
+          <SwiperSlide>
+            <video
+              className="w-full aspect-video"
+              autoPlay
+              src={HeroVideo}
+              controls
+              loop
+            />
+          </SwiperSlide>
           <SwiperSlide>
             <img className="object-cover w-full" src={Screenshot1} alt="" />
           </SwiperSlide>

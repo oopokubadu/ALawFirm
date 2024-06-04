@@ -18,7 +18,13 @@ const ReguLicensing = () => {
       >
         <div className="max-w-[85rem] mx-auto px-4 lg:px-6 flex h-[70vh] items-end">
           <div>
-            <h1 className="font-bold max-w-3xl text-white text-4xl mb-6 lg:text-5xl">
+            <h1
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              data-aos-once="true"
+              className="font-bold max-w-3xl text-white text-4xl mb-6 lg:text-5xl"
+            >
               Regulations and Licensing
             </h1>
 
@@ -31,6 +37,10 @@ const ReguLicensing = () => {
           {/* 1/3 and 2/3 */}
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3 text-white">
             <div
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              data-aos-once="true"
               className="flex flex-col bg-right-bottom bg-no-repeat p-5  lg:p-8 bg-[#262626]"
               style={{
                 backgroundImage: `url(${BgQuote})`,
@@ -45,7 +55,13 @@ const ReguLicensing = () => {
               </h2>
               <p className="mt-4 font-bold text-sm">-Ruth Bader Ginsburg</p>
             </div>
-            <div className="rounded-3xl p-5 lg:p-10 md:col-span-2">
+            <div
+              data-aos="fade-left"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              data-aos-once="true"
+              className="rounded-3xl p-5 lg:p-10 md:col-span-2"
+            >
               <p className="text-sm font-light mb-5">
                 Our goal is to demystify complex regulations and legal jargon,
                 empowering you to navigate the intricate world of business with

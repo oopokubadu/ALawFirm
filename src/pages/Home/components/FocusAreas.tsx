@@ -74,7 +74,14 @@ const FocusAreas = () => {
   ];
   return (
     <div className="bg-[#1D1D1D]">
-      <div className=" mx-auto px-4 pt-4 pb-10 sm:px-6 lg:px-8">
+      <div
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      
+        className=" mx-auto px-4 pt-4 pb-10 sm:px-6 lg:px-8"
+      >
         <h1 className="text-white lg:ps-20 py-10 font-semibold text-3xl">
           Our focus areas
         </h1>

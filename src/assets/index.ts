@@ -48,6 +48,8 @@ export { default as Abena } from "./photos/Abiba-Tornia.svg";
 export { default as Nobody } from "./photos/Mr-Nobody.svg";
 
 
+//video
+export { default as HeroVideo } from "./videos/eight-geeks.webm";
 
 //gifs
 export { default as EmptyDrawer } from "./gifs/drawer.json";
