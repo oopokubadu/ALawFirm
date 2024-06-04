@@ -21,31 +21,31 @@ const OurPeople = () => {
       name: "Emmanuel Saah",
       image: Emmanuel,
       position: "Not Available",
-      portfolio: "https://www.linkedin.com/in/priscahazel",
+      portfolio: "",
     },
     {
       name: "Augustina Odame",
       image: Augustina,
       position: "Not Available",
-      portfolio: "https://www.linkedin.com/in/priscahazel",
+      portfolio: "",
     },
     {
       name: "Vanessa Akuetteh",
       image: Vanessa,
       position: "Not Available",
-      portfolio: "https://www.linkedin.com/in/priscahazel",
+      portfolio: "",
     },
     {
       name: "Not Available",
       image: Nobody,
       position: "Not Available",
-      portfolio: "https://www.linkedin.com/in/priscahazel",
+      portfolio: "",
     },
     {
       name: "Abiba Tornia",
       image: Abena,
       position: "Not Available",
-      portfolio: "https://www.linkedin.com/in/priscahazel",
+      portfolio: "",
     },
   ];
   return (
