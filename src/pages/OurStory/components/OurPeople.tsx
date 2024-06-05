@@ -1,11 +1,11 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import {
-  Abena,
+  Abiba,
   Augustina,
   Emmanuel,
   Kofi,
-  Nobody,
+  Jude,
   Vanessa,
 } from "../../../assets";
 
@@ -37,13 +37,13 @@ const OurPeople = () => {
     },
     {
       name: "Not Available",
-      image: Nobody,
+      image: Jude,
       position: "Not Available",
       portfolio: "",
     },
     {
       name: "Abiba Tornia",
-      image: Abena,
+      image: Abiba,
       position: "Not Available",
       portfolio: "",
     },
@@ -67,7 +67,7 @@ const OurPeople = () => {
           >
             <div className="relative bg-[#262626] mb-4 overflow-hidden">
               <img
-                className=" object-cover transition-all duration-300 hover:scale-110"
+                className="h-56 mx-auto object-cover transition-all duration-300 hover:scale-110"
                 src={data.image}
                 alt="Person"
               />

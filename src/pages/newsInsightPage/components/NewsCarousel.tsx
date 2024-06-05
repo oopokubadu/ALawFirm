@@ -91,9 +91,9 @@ const NewsCarousel = () => {
                   <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-0 transition duration-300 ease-in-out group-hover:opacity-70"></div>
                 </div>
                 <div className="absolute  opacity-0 group-hover:opacity-100 bottom-[5rem] left-[7rem] z-20 m-0 pb-4 ps-4 transition duration-300 ease-in-out group-hover:-translate-y-1 group-hover:translate-x-3 group-hover:scale-110">
-                  <button className=" flex gap-x-2 underline items-center font-extralight text-white ">
+                  <button className=" flex gap-x-2 underline text-sm hover:font-bold hover:text-[#ED1B24]  items-center font-light text-white transition">
                     Read More
-                    <CgArrowRightO />
+                    <CgArrowRightO className="hover:-rotate-45" />
                   </button>
                 </div>
               </div>
