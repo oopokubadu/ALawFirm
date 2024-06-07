@@ -1,7 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import { SafeImg } from "../assets";
+import { useSendEmailMutation } from "../services/email-service";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "Eight Geeks Website",
+    message: "",
+  });
+  const [sendEmail, { isLoading, isError, isSuccess }] = useSendEmailMutation();
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = new FormData();
+    form.append("name", formData.name);
+    form.append("email", formData.email);
+    form.append("subject", formData.subject);
+    form.append("message", formData.message);
+
+    try {
+      await sendEmail(form);
+      alert("Email sent successfully!");
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      alert("Failed to send email.");
+    }
+  };
   return (
     <div>
       <div className="relative bg-[rgb(29,29,29)]">
@@ -42,7 +75,7 @@ const Contact = () => {
               <div className="lg:max-w-lg lg:mx-auto lg:me-0 ms-auto">
                 <div className="p-4 sm:p-7 flex flex-col bg-white  shadow-lg ">
                   <h1 className="text-2xl font-bold">Get in touch</h1>
-                  <form>
+                  <form onSubmit={handleSubmit}>
                     <div className="my-8">
                       <label
                         htmlFor="hs-feedback-post-comment-name-1"
@@ -51,8 +84,9 @@ const Contact = () => {
                         What’s your name?
                       </label>
                       <input
-                        type="text"
                         name="name"
+                        value={formData.name}
+                        onChange={handleChange}
                         className="py-4 px-5 block w-full bg-[#F5F5F5] text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
                         placeholder="What should we call you?"
                       />
@@ -65,20 +99,26 @@ const Contact = () => {
                         Enter your email
                       </label>
                       <input
-                        type="email"
-                        name="name"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
                         className="py-4 px-5 block w-full bg-[#F5F5F5] text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
                         placeholder="bestclient@gmail.com"
                       />
                       <textarea
                         placeholder="How can we help?"
-                        name="description"
-                        id="description"
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
                         className="py-4 px-3 my-4 block w-full h-36 bg-[#F5F5F5] text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
                       />
                     </div>
                   </form>
-                  <button className="w-full h-12 px-6 text-indigo-100 transition-colors duration-150 bg-[#ED1B24] rounded-lg focus:shadow-outline hover:bg-[#ed1b26c7]">
+                  <button
+                    type="submit"
+                    disabled={isLoading}
+                    className="w-full h-12 px-6 text-indigo-100 transition-colors duration-150 bg-[#ED1B24] rounded-lg focus:shadow-outline hover:bg-[#ed1b26c7]"
+                  >
                     Submit
                   </button>
                 </div>
@@ -100,11 +140,13 @@ const Contact = () => {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
             <div>
-              <div      data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-duration="1000"
-            data-aos-once="true"
-            data-aos-delay="200">
+              <div
+                data-aos="fade-right"
+                data-aos-offset="200"
+                data-aos-duration="1000"
+                data-aos-once="true"
+                data-aos-delay="200"
+              >
                 <h3 className="text-3xl font-semibold mb-4 text-white">
                   Our location
                 </h3>
