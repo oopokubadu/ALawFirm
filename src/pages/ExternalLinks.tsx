@@ -2,7 +2,7 @@ import React from "react";
 
 const ExternalLinks = ({ url }) => {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden bg-[#1D1D1D]">
       {" "}
       <iframe
         className="max-w-[85rem] my-10 w-full mx-auto h-[100rem] overflow-hidden"

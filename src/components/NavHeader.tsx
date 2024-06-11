@@ -21,7 +21,7 @@ const NavHeader = () => {
     },
     {
       title: "News and Insights",
-      link: "https://eightgeeksatlaw.wordpress.com/news-and-insights/",
+      link: "/news-and-insights",
     },
     {
       title: "Careers",

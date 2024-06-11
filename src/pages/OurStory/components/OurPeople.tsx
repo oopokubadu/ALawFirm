@@ -67,7 +67,7 @@ const OurPeople = () => {
           >
             <div className="relative bg-[#262626] mb-4 overflow-hidden">
               <img
-                className="h-56 mx-auto object-cover transition-all duration-300 hover:scale-110"
+                className="h-56 pt-5 mx-auto object-cover transition-all duration-300 hover:scale-110"
                 src={data.image}
                 alt="Person"
               />

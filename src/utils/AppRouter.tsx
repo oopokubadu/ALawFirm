@@ -24,7 +24,12 @@ const AppRouter = () => {
         <Route path="corporate-and-commercial" element={<CorporateLaw />} />
         <Route path="regulatory-and-licensing" element={<ReguLicensing />} />
         <Route path="our-story" element={<OurStory />} />
-        <Route path="news-and-insights" element={<NewsInsights />} />
+        <Route
+          path="news-and-insights"
+          element={
+            <ExternalLinks url="https://eightgeeksatlaw.wordpress.com/news-and-insights/" />
+          }
+        />
         <Route path="Careers" element={<Careers />} />
         <Route path="contact" element={<Contact />} />
         <Route path="news">

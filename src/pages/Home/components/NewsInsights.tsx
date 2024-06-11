@@ -51,12 +51,12 @@ const NewsInsights = () => {
           <h1 className="text-white  py-10 font-semibold text-3xl">
             News and Insights
           </h1>
-          <a
-            href="https://eightgeeksatlaw.wordpress.com/news-and-insights/"
+          <Link
+            to="/news-and-insights"
             className="relative after:absolute text-white after:bg-gray-200 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-left after:scale-x-100 hover:after:origin-bottom-right hover:after:scale-x-0 after:transition-transform after:ease-in-out after:duration-300"
           >
             View All
-          </a>
+          </Link>
         </div>
         <div className="grid gap-4 sm:grid-cols-3 my-4">
           {newsData.map((data, index) => (

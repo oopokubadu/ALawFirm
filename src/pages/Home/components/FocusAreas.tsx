@@ -84,7 +84,6 @@ const FocusAreas = () => {
         data-aos-offset="200"
         data-aos-duration="1000"
         data-aos-once="true"
-      
         className=" mx-auto px-4 pt-4 pb-10 sm:px-6 lg:px-8"
       >
         <h1 className="text-white lg:ps-20 py-10 font-semibold text-3xl">
@@ -96,7 +95,7 @@ const FocusAreas = () => {
           slidesPerView={6}
           navigation={false}
           autoplay={{
-            delay: 5000,
+            delay: 2500,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -139,12 +138,8 @@ const FocusAreas = () => {
             {specialistData.map((data, index) => (
               <SwiperSlide key={index}>
                 <div className=" bg-[#262626] hover:bg-[#1D1D1D] h-[14rem] border-4 border-transparent  hover:border-[#343434] transition ease-in-out duration-200 p-4">
-                <div className="flex items-center justify-center w-20 h-20 mb-4 rounded-full bg-[#232323] sm:mx-auto ">
-                  <img
-                    src={data.icon}
-                    alt=""
-                    className="w-10 h-10 mx-auto"
-                  />
+                  <div className="flex items-center justify-center w-20 h-20 mb-4 rounded-full bg-[#232323] sm:mx-auto ">
+                    <img src={data.icon} alt="" className="w-10 h-10 mx-auto" />
                   </div>
                   <h6 className="my-5 text-lg text-center  font-medium  text-white">
                     {data.title}
