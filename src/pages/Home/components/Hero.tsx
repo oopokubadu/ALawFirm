@@ -4,14 +4,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { ContactUsModal } from "../../../components/ContactUsModal";
 import { Hero1, Hero2, Hero3 } from "../../../assets";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const heroImgData = [
     {
-      image: Hero1,
+      image: Hero2,
     },
     {
-      image: Hero2,
+      image: Hero1,
     },
     {
       image: Hero3,
@@ -58,8 +59,14 @@ const Hero = () => {
         >
           {heroImgData.map((data, index) => (
             <SwiperSlide key={index}>
-              <img className="object-cover w-full" src={data.image} alt="" />
-              <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-30"></div>
+              <Link to="/our-story">
+                <img
+                  className="object-cover w-full h-[35rem]"
+                  src={data.image}
+                  alt=""
+                />
+                <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-30"></div>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>

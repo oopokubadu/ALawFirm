@@ -42,33 +42,6 @@ const Careers = () => {
             data-aos-offset="200"
             data-aos-duration="1000"
             data-aos-once="true"
-            data-aos-delay="600"
-            className="max-w-4xl text-center mx-auto"
-          >
-            <h1 className="block font-semibold text-white text-3xl md:text-4xl">
-              There are currently no openings
-            </h1>
-          </div>
-
-          <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-duration="1000"
-            data-aos-once="true"
-            data-aos-delay="800"
-            className="max-w-md text-center mx-auto"
-          >
-            <p className="text-sm md:text-base font-light text-white">
-              However, you can drop your CV here, we’ll keep it for when there’s
-              an opening.
-            </p>
-          </div>
-
-          <div
-            data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-duration="1000"
-            data-aos-once="true"
             data-aos-delay="1000"
             className="text-center"
           >

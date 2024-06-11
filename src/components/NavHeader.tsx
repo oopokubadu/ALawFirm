@@ -21,7 +21,7 @@ const NavHeader = () => {
     },
     {
       title: "News and Insights",
-      link: "/news-and-insights",
+      link: "https://eightgeeksatlaw.wordpress.com/news-and-insights/",
     },
     {
       title: "Careers",
@@ -119,7 +119,7 @@ const NavHeader = () => {
               leaveFrom="transform opacity-100 scale-100"
               leaveTo="transform opacity-0 scale-95"
             >
-              <Menu.Items className="absolute right-0 z-50 mt-2 w-56 origin-top-right rounded-xl bg-[#373636] py-3 shadow-xl focus:outline-none">
+              <Menu.Items className="absolute right-0 z-50 mt-2 w-56 origin-top-right  bg-[#373636] py-3 shadow-xl focus:outline-none">
                 {navData.map((data, index) => (
                   <Menu.Item key={index}>
                     {({ active }) => (

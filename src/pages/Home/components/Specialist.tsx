@@ -51,7 +51,7 @@ const Specialist = () => {
           data-aos-once="true"
           className="text-white py-10 font-semibold text-3xl"
         >
-          We are <span className="italic">specialist!</span>
+          We are <span className="italic">specialists!</span>
         </h1>
         <div className="grid gap-4 sm:grid-cols-3 my-4">
           {specialistData.map((data, index) => (

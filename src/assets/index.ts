@@ -39,14 +39,15 @@ export { default as DigitalHealth } from "./icons/ic_digital_health.svg";
 export { default as DigitalMedia } from "./icons/ic_digital_media.svg";
 export { default as Software } from "./icons/ic_software.svg";
 export { default as EGaming } from "./icons/ic_electronic_gaming.svg";
+export { default as AI } from "./icons/ic_ai.svg";
 
 //photos
-export { default as Kofi } from "./photos/Kofi-Owusu-Nhyira.png";
-export { default as Emmanuel } from "./photos/Esaah.png";
-export { default as Augustina } from "./photos/Augustina-Odame.png";
-export { default as Vanessa } from "./photos/Vanesa-Akuetteh.png";
-export { default as Abiba } from "./photos/Abiba-Tornia.png";
-export { default as Jude } from "./photos/Jude.png";
+export { default as Kofi } from "./photos/Kofi-Owusu-Nhyira.webp";
+export { default as Emmanuel } from "./photos/Esaah.webp";
+export { default as Augustina } from "./photos/Augustina-Odame.webp";
+export { default as Vanessa } from "./photos/Vanesa-Akuetteh.webp";
+export { default as Abiba } from "./photos/Abiba-Tornia.webp";
+export { default as Jude } from "./photos/Jude.webp";
 
 
 
