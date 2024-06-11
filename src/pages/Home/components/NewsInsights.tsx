@@ -1,33 +1,33 @@
 import React from "react";
-import {
-  Corporate,
-  Intellectual,
-  News1,
-  News2,
-  News3,
-  News4,
-  News5,
-  Regulations,
-} from "../../../assets";
 import { CgArrowRightO } from "react-icons/cg";
 import { Link } from "react-router-dom";
+import { News2, News3, News4, News5, News7, News8, News9 } from "../../../assets";
 
 const NewsInsights = () => {
   const newsData = [
     {
-      image: News1,
+      image: News8,
+      link: "/news/details-5",
     },
     {
       image: News2,
-    },
-    {
-      image: News3,
+      link: "/news/details-2",
     },
     {
       image: News4,
+      link: "/news/details-3",
+    },
+    {
+      image: News7,
+      link: "/news/details-4",
     },
     {
       image: News5,
+      link: "/news/details-1",
+    },
+    {
+      image: News9,
+      link: "/news/details-6",
     },
   ];
   return (
@@ -52,7 +52,8 @@ const NewsInsights = () => {
         </div>
         <div className="grid gap-4 sm:grid-cols-3 my-4">
           {newsData.map((data, index) => (
-            <div
+            <Link
+              to={data.link}
               key={index}
               data-aos="fade-up"
               data-aos-offset="200"
@@ -76,7 +77,7 @@ const NewsInsights = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

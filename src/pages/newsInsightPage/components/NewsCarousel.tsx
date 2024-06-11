@@ -2,27 +2,34 @@ import React from "react";
 import { CgArrowRightO } from "react-icons/cg";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { News1, News2, News3, News4, News5, News6 } from "../../../assets";
+import { News2, News3, News4, News5, News7, News8, News9 } from "../../../assets";
+import { Link } from "react-router-dom";
 
 const NewsCarousel = () => {
   const newsData = [
     {
-      image: News1,
+      image: News8,
+      link: "/news/details-5",
     },
     {
       image: News2,
-    },
-    {
-      image: News3,
+      link: "/news/details-2",
     },
     {
       image: News4,
+      link: "/news/details-3",
+    },
+    {
+      image: News7,
+      link: "/news/details-4",
     },
     {
       image: News5,
+      link: "/news/details-1",
     },
     {
-      image: News6,
+      image: News9,
+      link: "/news/details-6",
     },
   ];
   return (
@@ -81,7 +88,7 @@ const NewsCarousel = () => {
         >
           {newsData.map((data, index) => (
             <SwiperSlide key={index}>
-              <div className="group relative">
+              <Link to={data.link} className="group relative">
                 <div className="z-10 h-full w-full overflow-hidden  opacity-80 transition duration-300 ease-in-out group-hover:opacity-100">
                   <img
                     src={data.image}
@@ -96,7 +103,7 @@ const NewsCarousel = () => {
                     <CgArrowRightO className="hover:-rotate-45" />
                   </button>
                 </div>
-              </div>
+              </Link>
             </SwiperSlide>
           ))}
         </div>

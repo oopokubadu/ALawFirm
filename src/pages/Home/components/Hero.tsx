@@ -1,16 +1,22 @@
 import React from "react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  HeroVideo,
-  Screenshot1,
-  Screenshot2,
-  Screenshot3,
-  Screenshot4,
-} from "../../../assets";
+
 import { ContactUsModal } from "../../../components/ContactUsModal";
+import { Hero1, Hero2, Hero3 } from "../../../assets";
 
 const Hero = () => {
+  const heroImgData = [
+    {
+      image: Hero1,
+    },
+    {
+      image: Hero2,
+    },
+    {
+      image: Hero3,
+    },
+  ];
   return (
     <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-36 ">
       <div className="max-w-4xl">
@@ -38,38 +44,24 @@ const Hero = () => {
           spaceBetween={10}
           loop={true}
           slidesPerView={1}
-          navigation={true}
-          // autoplay={{
-          //   delay: 20000,
-          //   disableOnInteraction: false,
-          // }}
+          navigation={false}
+          effect={"fade"}
+          autoplay={{
+            delay: 5000,
+            disableOnInteraction: false,
+          }}
           pagination={{
             clickable: true,
           }}
-          modules={[Navigation, Pagination, Autoplay]}
+          modules={[EffectFade, Navigation, Pagination, Autoplay]}
           className="mySwiper"
         >
-          <SwiperSlide>
-            <video
-              className="w-full aspect-video"
-              autoPlay
-              src={HeroVideo}
-              controls
-              loop
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img className="object-cover w-full" src={Screenshot1} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img className="object-cover w-full" src={Screenshot2} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img className="object-cover w-full" src={Screenshot3} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img className="object-cover w-full" src={Screenshot4} alt="" />
-          </SwiperSlide>
+          {heroImgData.map((data, index) => (
+            <SwiperSlide key={index}>
+              <img className="object-cover w-full" src={data.image} alt="" />
+              <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-30"></div>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>

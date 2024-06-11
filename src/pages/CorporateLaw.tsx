@@ -24,7 +24,7 @@ const CorporateLaw = () => {
               data-aos-once="true"
               className="font-bold max-w-3xl text-white mb-6 text-4xl lg:text-5xl"
             >
-              Corporate Law
+              Corporate and Commercial
             </h1>
 
             <ContactUsModal />

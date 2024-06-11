@@ -2,16 +2,18 @@
 export { default as LogoWhite } from "./logo/8geeks.svg";
 
 //img
-export { default as Screenshot1 } from "./images/img_screenshot1.png";
-export { default as Screenshot2 } from "./images/img_screenshot2.png";
-export { default as Screenshot3 } from "./images/img_screenshot3.png";
-export { default as Screenshot4 } from "./images/img_screenshot4.png";
+export { default as Hero1 } from "./images/img_hero1.webp";
+export { default as Hero2 } from "./images/img_hero2.webp";
+export { default as Hero3 } from "./images/img_hero3.webp";
 export { default as News1 } from "./images/img_news1.svg";
 export { default as News2 } from "./images/img_news2.svg";
-export { default as News3 } from "./images/img_news4.svg";
+export { default as News3 } from "./images/img_news3.svg";
 export { default as News4 } from "./images/img_news4.svg";
 export { default as News5 } from "./images/img_news5.svg";
 export { default as News6 } from "./images/img_news6.svg";
+export { default as News7 } from "./images/img_news7.webp";
+export { default as News8 } from "./images/img_news8.webp";
+export { default as News9 } from "./images/img_news9.png";
 export { default as IntellectualBgImage } from "./images/bg_img_intellectual_property.webp";
 export { default as CorporateLawBgImage } from "./images/bg_img_corporate_law.webp";
 export { default as ReguLicenseBgImage } from "./images/bg_img_regulations_and_licensing.webp";
@@ -46,8 +48,7 @@ export { default as Vanessa } from "./photos/Vanesa-Akuetteh.png";
 export { default as Abiba } from "./photos/Abiba-Tornia.png";
 export { default as Jude } from "./photos/Jude.png";
 
-//video
-export { default as HeroVideo } from "./videos/eight-geeks.webm";
+
 
 //gifs
 export { default as EmptyDrawer } from "./gifs/drawer.json";

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BgQuote, BgQuoteBlack, StoryBgImage } from "../../assets";
+import { BgQuote, BgQuoteBlack, Hero2 } from "../../assets";
 import OurPeople from "./components/OurPeople";
 
 const OurStory = () => {
@@ -9,7 +9,7 @@ const OurStory = () => {
       <div
         className="h-[80vh]"
         style={{
-          backgroundImage: `url(${StoryBgImage})`,
+          backgroundImage: `url(${Hero2})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

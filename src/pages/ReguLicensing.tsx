@@ -1,5 +1,4 @@
 import React from "react";
-import { BsArrowUpRightCircle } from "react-icons/bs";
 import { BgQuote, ReguLicenseBgImage } from "../assets";
 import { CgQuote } from "react-icons/cg";
 import FocusAreas from "./Home/components/FocusAreas";
@@ -25,7 +24,7 @@ const ReguLicensing = () => {
               data-aos-once="true"
               className="font-bold max-w-3xl text-white text-4xl mb-6 lg:text-5xl"
             >
-              Regulations and Licensing
+              Regulatory and Licensing
             </h1>
 
             <ContactUsModal />

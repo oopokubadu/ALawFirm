@@ -1,7 +1,7 @@
 import { Fragment, useEffect } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { HiMenuAlt3 } from "react-icons/hi";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { LogoWhite } from "../assets";
 import { useState } from "react";
 
@@ -36,6 +36,7 @@ const NavHeader = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [scrollingDown, setScrollingDown] = useState(false);
   const threshold = 300; // Change this value to the desired scroll position threshold
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,7 +62,18 @@ const NavHeader = () => {
         scrollingDown ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      <div className="backdrop-blur-lg bg-gray/50 w-full">
+      <div
+        className={`backdrop-blur-lg w-full ${
+          location.pathname === "/news/details-1" ||
+          location.pathname === "/news/details-2" ||
+          location.pathname === "/news/details-3" ||
+          location.pathname === "/news/details-4" ||
+          location.pathname === "/news/details-5" ||
+          location.pathname === "/news/details-6"
+            ? "bg-[#262626]"
+            : "bg-gray/50"
+        }`}
+      >
         <nav className="relative max-w-[85rem] mx-auto z-20 flex shrink-0 items-center space-x-2  px-4 sm:px-6">
           <a href="/">
             {/* Logo */}

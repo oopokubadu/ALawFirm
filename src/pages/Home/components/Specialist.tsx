@@ -19,9 +19,9 @@ const Specialist = () => {
 
   const specialistData = [
     {
-      link: "/corporate-law",
+      link: "/corporate-and-commercial",
       icon: Corporate,
-      title: "Corporate Law",
+      title: "Corporate and Commercial",
       description:
         "We've got your corporate needs covered! Our expertise spans across multiple facets of corporate law, ensuring your interests are safeguarded in mergers and acquisitions, shareholder activism, corporate governance, emerging company structuring, and technology-related contract reviews. Count on us to be your dedicated corporate protectors! 🛡️💼🤝📝🚀",
     },
@@ -33,9 +33,9 @@ const Specialist = () => {
       We shield your brilliant ideas with patents, trademarks, copyrights, and top-notch legal protection. Plus, we're tech wizards who'll help you navigate the tricky waters of privacy, agreements, and user-vendor relationships. Join us in the quest for market disruption and let's geek out together! 🛡️💡🚀`,
     },
     {
-      link: "/regulations-and-licensing",
+      link: "/regulatory-and-licensing",
       icon: Regulations,
-      title: "Regulations and Licensing",
+      title: "Regulatory and Licensing",
       description:
         "We simplify regulations, empowering you to make informed decisions for your business. We also offer hassle-free licensing facilitation across various tech areas. Trust us to be your guiding light! 🌟🚀🔒",
     },
