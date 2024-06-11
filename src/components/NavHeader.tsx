@@ -69,7 +69,8 @@ const NavHeader = () => {
           location.pathname === "/news/details-3" ||
           location.pathname === "/news/details-4" ||
           location.pathname === "/news/details-5" ||
-          location.pathname === "/news/details-6"
+          location.pathname === "/news/details-6" ||
+          location.pathname === "/news-and-insights"
             ? "bg-[#262626]"
             : "bg-gray/50"
         }`}

@@ -7,7 +7,7 @@ const Careers = () => {
   return (
     <div>
       <div className=" bg-[#1D1D1D] flex pt-10 items-center">
-        <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
+        <div className="max-w-[85rem] flex flex-col  h-[100vh] justify-center items-center mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
           <div className="max-w-4xl text-center mx-auto">
             <h1
               data-aos="fade-up"
@@ -42,7 +42,7 @@ const Careers = () => {
             data-aos-offset="200"
             data-aos-duration="1000"
             data-aos-once="true"
-            data-aos-delay="1000"
+            data-aos-delay="600"
             className="text-center"
           >
             <Player src={EmptyDrawer} className="player w-48" loop autoplay />

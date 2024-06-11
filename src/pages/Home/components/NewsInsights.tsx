@@ -3,7 +3,6 @@ import { CgArrowRightO } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import {
   News2,
-  News3,
   News4,
   News5,
   News7,
