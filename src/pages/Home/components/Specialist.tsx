@@ -26,18 +26,19 @@ const Specialist = () => {
         " Our Corporate and Commercial practice covers a wide range of commercial activities. The team provides legal support to clients on all aspects of their equity and debt capital market transactions, shareholder activism, corporate governance, emerging company structuring and technology-related contract review.",
     },
     {
-      link: "/intellectual-property-&-technology-transactions",
-      icon: Intellectual,
-      title: "Intellectual Property & Technology Transactions",
-      description: " Our Intellectual Property practice offers strategic counsel to clients concerning all aspects of intellectual property rights including trademarks and passing off, patents, confidential information, copyright, designs and database rights and related regulatory issues."
-    },
-    {
       link: "/regulatory-and-licensing",
       icon: Regulations,
       title: "Regulatory and Licensing",
       description:
         "Our Regulatory and Licensing team ensures that you fulfil all applicable regulatory obligations with targeted guidance so you can focus on your core business. Our licensing support services has involved interfacing with regulatory bodies to represent our clients’ best interests while also ensuring their compliance with applicable law.",
     },
+    {
+      link: "/intellectual-property-&-technology-transactions",
+      icon: Intellectual,
+      title: "Intellectual Property & Technology Transactions",
+      description: " Our Intellectual Property practice offers strategic counsel to clients concerning all aspects of intellectual property rights including trademarks and passing off, patents, confidential information, copyright, designs and database rights and related regulatory issues."
+    },
+   
   ];
 
   return (
