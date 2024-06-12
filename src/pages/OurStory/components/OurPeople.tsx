@@ -49,8 +49,8 @@ const OurPeople = () => {
     },
   ];
   return (
-    <div>
-      <h1 className="text-3xl  md:text-3xl font-bold mt-12 mb-10 text-white ">
+    <div className="pb-16">
+      <h1 className="text-3xl  md:text-3xl font-bold pt-12 pb-10 text-white ">
         The brains behind the awesomeness
       </h1>
 

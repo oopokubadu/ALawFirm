@@ -32,7 +32,7 @@ const OurStory = () => {
       <div className="bg-[#1D1D1D] pb-14">
         <div className="mx-auto max-w-[85rem]  px-4 lg:px-6 ">
           {/* 1/3 and 2/3 */}
-
+          <OurPeople />
           <div
             data-aos="fade-up"
             data-aos-offset="200"
@@ -111,7 +111,6 @@ const OurStory = () => {
               </p>
             </div>
           </div>
-          <OurPeople />
         </div>
       </div>
     </div>

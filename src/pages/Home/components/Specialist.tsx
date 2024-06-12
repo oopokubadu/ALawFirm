@@ -23,21 +23,20 @@ const Specialist = () => {
       icon: Corporate,
       title: "Corporate and Commercial",
       description:
-        "We've got your corporate needs covered! Our expertise spans across multiple facets of corporate law, ensuring your interests are safeguarded in mergers and acquisitions, shareholder activism, corporate governance, emerging company structuring, and technology-related contract reviews. Count on us to be your dedicated corporate protectors! 🛡️💼🤝📝🚀",
+        " Our Corporate and Commercial practice covers a wide range of commercial activities. The team provides legal support to clients on all aspects of their equity and debt capital market transactions, shareholder activism, corporate governance, emerging company structuring and technology-related contract review.",
     },
     {
       link: "/intellectual-property-&-technology-transactions",
       icon: Intellectual,
       title: "Intellectual Property & Technology Transactions",
-      description: `At Eight Geeks, we're your fierce defenders of innovation! 
-      We shield your brilliant ideas with patents, trademarks, copyrights, and top-notch legal protection. Plus, we're tech wizards who'll help you navigate the tricky waters of privacy, agreements, and user-vendor relationships. Join us in the quest for market disruption and let's geek out together! 🛡️💡🚀`,
+      description: " Our Intellectual Property practice offers strategic counsel to clients concerning all aspects of intellectual property rights including trademarks and passing off, patents, confidential information, copyright, designs and database rights and related regulatory issues."
     },
     {
       link: "/regulatory-and-licensing",
       icon: Regulations,
       title: "Regulatory and Licensing",
       description:
-        "We simplify regulations, empowering you to make informed decisions for your business. We also offer hassle-free licensing facilitation across various tech areas. Trust us to be your guiding light! 🌟🚀🔒",
+        "Our Regulatory and Licensing team ensures that you fulfil all applicable regulatory obligations with targeted guidance so you can focus on your core business. Our licensing support services has involved interfacing with regulatory bodies to represent our clients’ best interests while also ensuring their compliance with applicable law.",
     },
   ];
 

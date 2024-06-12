@@ -74,7 +74,7 @@ const FocusAreas = () => {
     },
     {
       icon: AI,
-      title: "Artificial Intelligent",
+      title: "Artificial Intelligence",
     },
   ];
   return (
