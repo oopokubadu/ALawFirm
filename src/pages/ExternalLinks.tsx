@@ -15,6 +15,7 @@ const ExternalLinks = ({ url }) => {
       <iframe
         className="max-w-[85rem] my-10 w-full mx-auto h-[100rem] overflow-hidden"
         src={url}
+        scrolling="no"
         // style={{ flexGrow: 1, border: "none" }}
         title="External Content"
       ></iframe>
