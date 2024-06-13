@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Corporate, Intellectual, Regulations } from "../../../assets";
 import { CgArrowRightO } from "react-icons/cg";
-import { link } from "fs";
 import { Link, useLocation } from "react-router-dom";
 
 const Specialist = () => {
@@ -36,9 +35,9 @@ const Specialist = () => {
       link: "/intellectual-property-&-technology-transactions",
       icon: Intellectual,
       title: "Intellectual Property & Technology Transactions",
-      description: " Our Intellectual Property practice offers strategic counsel to clients concerning all aspects of intellectual property rights including trademarks and passing off, patents, confidential information, copyright, designs and database rights and related regulatory issues."
+      description:
+        " Our Intellectual Property practice offers strategic counsel to clients concerning all aspects of intellectual property rights including trademarks and passing off, patents, confidential information, copyright, designs and database rights and related regulatory issues.",
     },
-   
   ];
 
   return (

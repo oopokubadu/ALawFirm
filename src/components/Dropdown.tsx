@@ -22,20 +22,11 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
     >
       <NavLink
         to={href}
-        className={({ isActive }) =>
-          `inline-flex text-[#CECECE] relative group h-24 cursor-pointer items-center justify-center px-4 py-2.5 text-base font-light ${
-            isActive ? "font-bold text-white border-b-2 border-[#ED1B24]" : ""
-          }`
-        }
+        className="inline-flex text-[#CECECE] relative group h-24 cursor-pointer items-center justify-center px-4 py-2.5 text-base font-light"
       >
         {children}
-        {/* <span
-          style={{
-            transform: showFlyout ? "scaleX(1)" : "scaleX(0)",
-          }}
-            className="absolute bottom-0 left-0 right-0 h-1 origin-left scale-x-0 rounded-full bg-indigo-300 transition-transform duration-300 ease-out"
-        /> */}
-            <span className="absolute -bottom-0 left-0 w-0 transition-all h-0.5 bg-[#ED1B24] group-hover:w-full"></span>
+
+        <span className="absolute -bottom-0 left-0 w-0 transition-all h-0.5 bg-[#ED1B24] group-hover:w-full"></span>
       </NavLink>
       <AnimatePresence>
         {showFlyout && (
@@ -48,7 +39,7 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
             className="absolute left-1/2 top-[6rem] bg-white text-black shadow-xl"
           >
             <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent" />
-            {/* <div className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-white" /> */}
+
             <FlyoutContent />
           </motion.div>
         )}
