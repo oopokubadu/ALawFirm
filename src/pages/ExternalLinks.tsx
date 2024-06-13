@@ -1,6 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const ExternalLinks = ({ url }) => {
+  useEffect(() => {
+    const hasReloaded = sessionStorage.getItem('hasReloaded');
+
+    if (hasReloaded !== 'true') {
+      sessionStorage.setItem('hasReloaded', 'true');
+      window.location.reload();
+    }
+  }, []);
   return (
     <div className="overflow-hidden bg-[#1D1D1D]">
       {" "}
