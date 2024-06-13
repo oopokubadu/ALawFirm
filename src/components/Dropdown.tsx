@@ -52,21 +52,18 @@ const SpecialitiesContent = () => {
   const specialistData = [
     {
       link: "/corporate-and-commercial",
-      bgColor: "#1D1D1D",
       title: "Corporate and Commercial",
       description:
         " Our Corporate and Commercial practice covers a wide range of commercial activities. The team provides legal support to clients on all aspects of their equity and debt capital market transactions, shareholder activism, corporate governance, emerging company structuring and technology-related contract review.",
     },
     {
       link: "/regulatory-and-licensing",
-      bgColor: "#2F2F2F",
       title: "Regulatory and Licensing",
       description:
         "Our Regulatory and Licensing team ensures that you fulfil all applicable regulatory obligations with targeted guidance so you can focus on your core business. Our licensing support services has involved interfacing with regulatory bodies to represent our clients’ best interests while also ensuring their compliance with applicable law.",
     },
     {
       link: "/intellectual-property-&-technology-transactions",
-      bgColor: "#1D1D1D",
       title: "Intellectual Property & Technology Transactions",
       description:
         " Our Intellectual Property practice offers strategic counsel to clients concerning all aspects of intellectual property rights including trademarks and passing off, patents, confidential information, copyright, designs and database rights and related regulatory issues.",
@@ -79,8 +76,7 @@ const SpecialitiesContent = () => {
           <Link
             to={data.link}
             key={index}
-            className="p-4 border-4 border-transparent"
-            style={{ backgroundColor: `${data.bgColor}` }}
+            className="p-4 border-4 border-transparent hover:bg-[#2F2F2F] "
           >
             <h6 className="my-5 text-lg  font-medium  text-white">
               {data.title}
