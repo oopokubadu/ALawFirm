@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 
 const ExternalLinks = ({ url }) => {
   useEffect(() => {
-    const hasReloaded = sessionStorage.getItem('hasReloaded');
+    const hasReloaded = sessionStorage.getItem("hasReloaded");
 
-    if (hasReloaded !== 'true') {
-      sessionStorage.setItem('hasReloaded', 'true');
+    if (hasReloaded !== "true") {
+      sessionStorage.setItem("hasReloaded", "true");
       window.location.reload();
     }
   }, []);
@@ -15,7 +15,8 @@ const ExternalLinks = ({ url }) => {
       <iframe
         className="max-w-[85rem] my-10 w-full mx-auto h-[100rem] overflow-hidden"
         src={url}
-        scrolling="no"
+        sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+        // scrolling="no"
         // style={{ flexGrow: 1, border: "none" }}
         title="External Content"
       ></iframe>
