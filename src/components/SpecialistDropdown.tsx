@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link, NavLink } from "react-router-dom";
 
-const Dropdown = () => {
+const SpecialistDropdown = () => {
   return (
     <FlyoutLink href="/home#specialist" FlyoutContent={SpecialitiesContent}>
       Our Specialities
@@ -92,4 +92,4 @@ const SpecialitiesContent = () => {
   );
 };
 
-export default Dropdown;
+export default SpecialistDropdown;

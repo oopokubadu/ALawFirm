@@ -3,15 +3,15 @@ import { Menu, Transition } from "@headlessui/react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { NavLink, useLocation } from "react-router-dom";
 import { LogoWhite } from "../assets";
-import Dropdown from "./Dropdown";
-
+import SpecialistDropdown from "./SpecialistDropdown";
+import NewsInsightsDropdown from "./NewsInsightsDropdown";
 
 const NavHeader = () => {
   const navData = [
-    // {
-    //   title: "Home",
-    //   link: "/home",
-    // },
+    {
+      title: "Home",
+      link: "/home",
+    },
     {
       title: "Our story",
       link: "/our-story",
@@ -61,9 +61,7 @@ const NavHeader = () => {
     >
       <div
         className={`backdrop-blur-lg w-full ${
-          location.pathname.startsWith("/news")
-            ? "bg-[#262626]"
-            : "bg-gray/50"
+          location.pathname.startsWith("/news") ? "bg-[#262626]" : "bg-gray/50"
         }`}
       >
         <nav className="relative max-w-[85rem] mx-auto z-20 flex shrink-0 items-center space-x-2  px-4 sm:px-6">
@@ -79,28 +77,56 @@ const NavHeader = () => {
               to="/home"
               className={({ isActive }) =>
                 `inline-flex text-[#CECECE] relative group h-24 cursor-pointer items-center justify-center px-4 py-2.5 text-base font-light ${
-                  isActive ? "font-bold text-white border-b-2 border-[#ED1B24]" : ""
+                  isActive
+                    ? "font-bold text-white border-b-2 border-[#ED1B24]"
+                    : ""
                 }`
               }
             >
               Home
               <span className="absolute -bottom-0 left-0 w-0 transition-all h-0.5 bg-[#ED1B24] group-hover:w-full"></span>
             </NavLink>
-            <Dropdown /> {/* Include the OurSpecialities component */}
-            {navData.map((data, index) => (
-              <NavLink
-                key={index}
-                to={data.link}
-                className={({ isActive }) =>
-                  `inline-flex text-[#CECECE] relative group h-24 cursor-pointer items-center justify-center px-4 py-2.5 text-base font-light ${
-                    isActive ? "font-bold text-white border-b-2 border-[#ED1B24]" : ""
-                  }`
-                }
-              >
-                {data.title}
-                <span className="absolute -bottom-0 left-0 w-0 transition-all h-0.5 bg-[#ED1B24] group-hover:w-full"></span>
-              </NavLink>
-            ))}
+            <SpecialistDropdown /> {/* Include the OurSpecialities component */}
+            <NavLink
+              to="/our-story"
+              className={({ isActive }) =>
+                `inline-flex text-[#CECECE] relative group h-24 cursor-pointer items-center justify-center px-4 py-2.5 text-base font-light ${
+                  isActive
+                    ? "font-bold text-white border-b-2 border-[#ED1B24]"
+                    : ""
+                }`
+              }
+            >
+              Our Story
+              <span className="absolute -bottom-0 left-0 w-0 transition-all h-0.5 bg-[#ED1B24] group-hover:w-full"></span>
+            </NavLink>
+            <NewsInsightsDropdown />
+            <NavLink
+              to="/careers"
+              className={({ isActive }) =>
+                `inline-flex text-[#CECECE] relative group h-24 cursor-pointer items-center justify-center px-4 py-2.5 text-base font-light ${
+                  isActive
+                    ? "font-bold text-white border-b-2 border-[#ED1B24]"
+                    : ""
+                }`
+              }
+            >
+              Careers
+              <span className="absolute -bottom-0 left-0 w-0 transition-all h-0.5 bg-[#ED1B24] group-hover:w-full"></span>
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                `inline-flex text-[#CECECE] relative group h-24 cursor-pointer items-center justify-center px-4 py-2.5 text-base font-light ${
+                  isActive
+                    ? "font-bold text-white border-b-2 border-[#ED1B24]"
+                    : ""
+                }`
+              }
+            >
+              Contact
+              <span className="absolute -bottom-0 left-0 w-0 transition-all h-0.5 bg-[#ED1B24] group-hover:w-full"></span>
+            </NavLink>
           </div>
 
           <Menu as="div" className="h-20 relative md:hidden z-50">
@@ -120,7 +146,6 @@ const NavHeader = () => {
               leaveTo="transform opacity-0 scale-95"
             >
               <Menu.Items className="absolute right-0 z-50 mt-2 w-56 origin-top-right bg-[#373636] py-3 shadow-xl focus:outline-none">
-            
                 {navData.map((data, index) => (
                   <Menu.Item key={index}>
                     {({ active }) => (
