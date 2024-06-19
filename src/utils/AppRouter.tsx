@@ -10,6 +10,7 @@ import NewsInsights from "../pages/newsInsightPage/NewsInsights";
 import Careers from "../pages/Careers";
 import Contact from "../pages/Contact";
 import ExternalLinks from "../pages/ExternalLinks";
+import InsightsNews from "../pages/newsInsightPage/InsightsNews";
 
 const AppRouter = () => {
   return (
@@ -24,14 +25,15 @@ const AppRouter = () => {
         <Route path="corporate-and-commercial" element={<CorporateLaw />} />
         <Route path="regulatory-and-licensing" element={<ReguLicensing />} />
         <Route path="our-story" element={<OurStory />} />
-        <Route
-          path="news-and-insights"
-          element={
-            <ExternalLinks url="https://eightgeeksatlaw.wordpress.com/news-and-insights/" />
-          }
-        />
+        <Route path="news-and-insights" element={<InsightsNews />} />
         <Route path="Careers" element={<Careers />} />
         <Route path="contact" element={<Contact />} />
+        <Route
+          path="library"
+          element={
+            <ExternalLinks url="https://fliphtml5.com/bookcase/pqijl/green" />
+          }
+        />
         <Route path="news">
           <Route
             path="details-1"

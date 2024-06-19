@@ -40,6 +40,8 @@ export { default as DigitalMedia } from "./icons/ic_digital_media.svg";
 export { default as Software } from "./icons/ic_software.svg";
 export { default as EGaming } from "./icons/ic_electronic_gaming.svg";
 export { default as AI } from "./icons/ic_ai.svg";
+export { default as Library } from "./icons/ic_library.svg";
+export { default as Blog } from "./icons/ic_blog.svg";
 
 //photos
 export { default as Kofi } from "./photos/Kofi-Owusu-Nhyira.webp";
