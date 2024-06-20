@@ -1,5 +1,6 @@
 //Logo
 export { default as LogoWhite } from "./logo/8geeks.svg";
+export { default as LogoBlack } from "./logo/logoBlack.svg";
 
 //img
 export { default as Hero1 } from "./images/img_hero1.webp";
@@ -51,7 +52,10 @@ export { default as Vanessa } from "./photos/Vanesa-Akuetteh.webp";
 export { default as Abiba } from "./photos/Abiba-Tornia.webp";
 export { default as Jude } from "./photos/Jude.webp";
 
-
+//Videos
+export { default as HeroVid1 } from "./videos/video_hero1.webm";
+export { default as HeroVid2 } from "./videos/video_hero2.webm";
+export { default as HeroVid3 } from "./videos/video_hero3.webm";
 
 //gifs
 export { default as EmptyDrawer } from "./gifs/drawer.json";

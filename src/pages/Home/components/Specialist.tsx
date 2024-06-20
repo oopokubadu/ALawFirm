@@ -41,14 +41,14 @@ const Specialist = () => {
   ];
 
   return (
-    <div id="specialist" className="bg-[#1D1D1D]">
+    <div id="specialist" className="bg-[#F9F9F9]">
       <div className="max-w-[85rem] mx-auto px-4 pt-4 pb-10 sm:px-6 lg:px-8">
         <h1
           data-aos="fade-up"
           data-aos-offset="300"
           data-aos-duration="3000"
           data-aos-once="true"
-          className="text-white py-10 font-semibold text-3xl"
+          className="text-[#1D1D1D] py-10 font-semibold text-3xl"
         >
           We are <span className="italic">specialists!</span>
         </h1>
@@ -62,16 +62,14 @@ const Specialist = () => {
               data-aos-duration="1000"
               data-aos-once="true"
               data-aos-delay={index * 200}
-              className=" bg-[#262626] hover:bg-[#1D1D1D] border-4 border-transparent  hover:border-[#343434] transition ease-in-out duration-200 p-6"
+              className=" bg-white hover:bg-[#F0F0F0] border-4 border-transparent  hover:border-[#DFDFDF] transition ease-in-out duration-200 p-6"
             >
               <img src={data.icon} alt="" className="w-12 h-12" />
-              <h6 className="my-5 text-lg  font-medium  text-white">
+              <h6 className="my-5 text-lg  font-medium  text-[#1D1D1D]">
                 {data.title}
               </h6>
-              <p className="text-sm mb-6  font-extralight text-white">
-                {data.description}
-              </p>
-              <button className=" flex gap-x-2 underline items-center font-extralight text-white ">
+              <p className="text-sm mb-6  text-[#1D1D1D]">{data.description}</p>
+              <button className=" flex gap-x-2 underline items-center text-[#1D1D1D] ">
                 Read More
                 <CgArrowRightO />
               </button>

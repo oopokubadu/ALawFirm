@@ -78,7 +78,7 @@ const FocusAreas = () => {
     },
   ];
   return (
-    <div className="bg-[#1D1D1D]">
+    <div className="bg-[#F9F9F9]">
       <div
         data-aos="fade-up"
         data-aos-offset="200"
@@ -86,7 +86,7 @@ const FocusAreas = () => {
         data-aos-once="true"
         className=" mx-auto px-4 pt-4 pb-10 sm:px-6 lg:px-8"
       >
-        <h1 className="text-white lg:ps-20 py-10 font-semibold text-3xl">
+        <h1 className="text-[#1D1D1D] lg:ps-20 py-10 font-semibold text-3xl">
           Our focus areas
         </h1>
         <Swiper
@@ -137,11 +137,11 @@ const FocusAreas = () => {
           <div className="my-4">
             {specialistData.map((data, index) => (
               <SwiperSlide key={index}>
-                <div className=" bg-[#262626] hover:bg-[#1D1D1D] h-[14rem] border-4 border-transparent  hover:border-[#343434] transition ease-in-out duration-200 p-4">
-                  <div className="flex items-center justify-center w-20 h-20 mb-4 rounded-full bg-[#232323] mx-auto ">
+                <div className=" bg-white hover:bg-[#F0F0F0] h-[14rem] border-4 border-transparent  hover:border-[#DFDFDF] transition ease-in-out duration-200 p-4">
+                  <div className="flex items-center justify-center w-20 h-20 mb-4 rounded-full bg-[#F9F9F9] mx-auto ">
                     <img src={data.icon} alt="" className="w-10 h-10 mx-auto" />
                   </div>
-                  <h6 className="my-5 text-lg text-center  font-medium  text-white">
+                  <h6 className="my-5 text-lg text-center  font-medium  text-[#1D1D1D]">
                     {data.title}
                   </h6>
                 </div>

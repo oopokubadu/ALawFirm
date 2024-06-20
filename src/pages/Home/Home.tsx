@@ -7,7 +7,7 @@ import FocusAreas from "./components/FocusAreas";
 
 const Home = () => {
   return (
-    <div className="bg-[#262626]">
+    <div className="bg-white">
       <Hero />
       <Specialist />
       <NewsInsights />

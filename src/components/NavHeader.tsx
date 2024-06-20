@@ -59,11 +59,11 @@ const NavHeader = () => {
         scrollingDown ? "-translate-y-full" : "translate-y-0"
       }`}
     >
-      <div
+      {/* <div
         className={`backdrop-blur-lg w-full ${
-          location.pathname.startsWith("/news") ? "bg-[#262626]" : "bg-gray/50"
-        }`}
-      >
+          location.pathname.startsWith("/news") ? "bg-[#262626]" : "bg-[#262626] bg-opacity-50"
+        }`} */}
+      <div className="backdrop-blur-lg w-full bg-[#262626] bg-opacity-50">
         <nav className="relative max-w-[85rem] mx-auto z-20 flex shrink-0 items-center space-x-2  px-4 sm:px-6">
           <a href="/">
             {/* Logo */}

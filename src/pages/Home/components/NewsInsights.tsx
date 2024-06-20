@@ -1,14 +1,7 @@
 import React from "react";
 import { CgArrowRightO } from "react-icons/cg";
 import { Link } from "react-router-dom";
-import {
-  News2,
-  News4,
-  News5,
-  News7,
-  News8,
-  News9,
-} from "../../../assets";
+import { News2, News4, News5, News7, News8, News9 } from "../../../assets";
 
 const NewsInsights = () => {
   const newsData = [
@@ -47,12 +40,12 @@ const NewsInsights = () => {
           data-aos-once="true"
           className="flex flex-wrap justify-between items-center"
         >
-          <h1 className="text-white  py-10 font-semibold text-3xl">
+          <h1 className="text-[#1D1D1D]  py-10 font-semibold text-3xl">
             News and Insights
           </h1>
           <Link
             to="/news-and-insights"
-            className="relative after:absolute text-white after:bg-gray-200 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-left after:scale-x-100 hover:after:origin-bottom-right hover:after:scale-x-0 after:transition-transform after:ease-in-out after:duration-300"
+            className="relative after:absolute text-[#1D1D1D] after:bg-gray-200 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-left after:scale-x-100 hover:after:origin-bottom-right hover:after:scale-x-0 after:transition-transform after:ease-in-out after:duration-300"
           >
             View All
           </Link>
@@ -69,7 +62,7 @@ const NewsInsights = () => {
               data-aos-delay={index * 200}
             >
               <div className="group relative">
-                <div className="z-10 h-full w-full overflow-hidden  opacity-80 transition duration-300 ease-in-out group-hover:opacity-100">
+                <div className="z-10 h-full w-full overflow-hidden   transition duration-300 ease-in-out group-hover:opacity-100">
                   <img
                     src={data.image}
                     className="animate-fade-in block h-full w-full scale-100 transform object-cover object-center opacity-100 transition duration-300 group-hover:scale-110"

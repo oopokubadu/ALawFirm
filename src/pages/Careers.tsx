@@ -6,7 +6,7 @@ import { EmptyDrawer } from "../assets";
 const Careers = () => {
   return (
     <div>
-      <div className=" bg-[#1D1D1D] flex pt-10 items-center">
+      <div className=" bg-[#F9F9F9] flex pt-10 items-center">
         <div className="max-w-[85rem] flex flex-col  h-[100vh] justify-center items-center mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
           <div className="max-w-4xl text-center mx-auto">
             <h1
@@ -15,7 +15,7 @@ const Careers = () => {
               data-aos-duration="1000"
               data-aos-once="true"
               data-aos-delay="200"
-              className="block font-semibold text-white text-4xl md:text-5xl"
+              className="block font-semibold text-[#262626] text-4xl md:text-5xl"
             >
               Join our world-class team of tech legal experts.
             </h1>
@@ -29,7 +29,7 @@ const Careers = () => {
             data-aos-delay="400"
             className="max-w-3xl text-center mx-auto"
           >
-            <p className="text-base md:text-lg font-light text-white">
+            <p className="text-base md:text-lg  text-[#262626]">
               We are primed towards the growth of Africa’s high tech and
               innovation industries and we work with the brightest innovators
               and entrepreneurs across the globe to push the boundaries of

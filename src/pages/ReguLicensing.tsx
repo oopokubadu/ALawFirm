@@ -31,16 +31,16 @@ const ReguLicensing = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#1D1D1D] pb-14">
+      <div className="bg-white pb-14">
         <div className="mx-auto max-w-[85rem]  px-4 lg:px-6 space-y-8 md:space-y-20">
           {/* 1/3 and 2/3 */}
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-3 text-white">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-3 text-[#262626]">
             <div
               data-aos="fade-right"
               data-aos-offset="200"
               data-aos-duration="1000"
               data-aos-once="true"
-              className="flex flex-col bg-right-bottom bg-no-repeat p-5  lg:p-8 bg-[#262626]"
+              className="flex flex-col bg-right-bottom bg-no-repeat p-5  lg:p-8 bg-[#F9F9F9]"
               style={{
                 backgroundImage: `url(${BgQuote})`,
                 backgroundSize: "15rem",
