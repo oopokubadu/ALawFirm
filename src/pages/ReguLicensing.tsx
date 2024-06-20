@@ -40,19 +40,19 @@ const ReguLicensing = () => {
               data-aos-offset="200"
               data-aos-duration="1000"
               data-aos-once="true"
-              className="flex flex-col bg-right-bottom bg-no-repeat p-5  lg:p-8 bg-[#F9F9F9]"
+                     className="flex flex-col bg-right-bottom bg-no-repeat p-5 group  lg:p-8 bg-[#F9F9F9] hover:bg-[#ED1B24] hover:transition hover:duration-300 hover:ease-in-out"
               style={{
                 backgroundImage: `url(${BgQuote})`,
                 backgroundSize: "15rem",
               }}
             >
-              <CgQuote className="text-7xl" />
-              <h2 className="text-2xl font-medium ">
+              <CgQuote className="text-7xl group-hover:text-white" />
+              <h2 className="text-2xl font-medium group-hover:text-white">
                 The strength of the law lies not in its mere existence, but in
                 its ability to protect and uphold the rights and dignity of
                 every individual in society.
               </h2>
-              <p className="mt-4 font-bold text-sm">-Ruth Bader Ginsburg</p>
+              <p className="mt-4 font-bold text-sm group-hover:text-white">-Ruth Bader Ginsburg</p>
             </div>
             <div
               data-aos="fade-left"
@@ -61,14 +61,14 @@ const ReguLicensing = () => {
               data-aos-once="true"
               className="rounded-3xl p-5 lg:p-10 md:col-span-2"
             >
-              <p className="text-sm font-light mb-5">
+              <p className="text-sm mb-5">
                 Our goal is to demystify complex regulations and legal jargon,
                 empowering you to navigate the intricate world of business with
                 confidence. From startups to established enterprises, we're here
                 to provide you with the knowledge and guidance needed to make
                 informed decisions that fuel your success.
               </p>
-              <p className="text-sm font-light mb-5">
+              <p className="text-sm mb-5">
                 With our deep understanding of the ever-changing legal
                 landscape, we ensure that you stay compliant and avoid costly
                 pitfalls. Our team of experts will work hand in hand with you,
@@ -76,7 +76,7 @@ const ReguLicensing = () => {
                 easier for you to focus on what you do best – driving your
                 business forward.
               </p>
-              <p className="text-sm font-light">
+              <p className="text-sm ">
                 In addition to our regulatory prowess, we excel in licensing
                 facilitation across various tech areas. Whether you're
                 developing cutting-edge software, creating innovative hardware
@@ -88,7 +88,7 @@ const ReguLicensing = () => {
                 illuminating the path to success in this dynamic tech-driven
                 world. With Eight Geeks by your side, you can confidently propel
                 your ideas to market, disrupt industries, and soar to new
-                heights. Let's embark on this thrilling journey together! 🌟🚀🔒
+                heights. Let's embark on this thrilling journey together!
               </p>
             </div>
           </div>

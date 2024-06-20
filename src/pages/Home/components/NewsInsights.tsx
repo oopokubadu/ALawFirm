@@ -35,8 +35,8 @@ const NewsInsights = () => {
       <div className="max-w-[85rem] mx-auto px-4 pt-4 pb-10 sm:px-6 lg:px-8">
         <div
           data-aos="fade-up"
-          data-aos-offset="300"
-          data-aos-duration="3000"
+          data-aos-offset="200"
+          data-aos-duration="1000"
           data-aos-once="true"
           className="flex flex-wrap justify-between items-center"
         >

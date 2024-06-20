@@ -50,17 +50,17 @@ const FlyoutLink = ({ children, href, FlyoutContent }) => {
 
 const SpecialitiesContent = () => {
   return (
-    <ul className="w-64 text-lg font-medium text-white bg-[#1D1D1D] shadow-xl">
+    <ul className="w-64 text-base font-medium text-[#262626] bg-[#F9F9F9] shadow-sm">
       <a
-        href="https://eightgeeksatlaw.wordpress.com/"
+        href="https://eightgeeksatlaw.wordpress.com/news-and-insights/"
         target="_blank"
         rel="noreferrer"
       >
-        <li className="w-full px-6 py-4  hover:bg-[#2F2F2F] ">Blog</li>
+        <li className="w-full px-6 py-4  hover:bg-[#F0F0F0] ">Blog</li>
       </a>
       <Link to="/library">
         {" "}
-        <li className="w-full px-6 py-4  hover:bg-[#2F2F2F] ">Library</li>
+        <li className="w-full px-6 py-4  hover:bg-[#F0F0F0] ">Library</li>
       </Link>
     </ul>
   );

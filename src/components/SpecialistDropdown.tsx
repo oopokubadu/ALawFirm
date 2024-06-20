@@ -70,18 +70,18 @@ const SpecialitiesContent = () => {
     },
   ];
   return (
-    <div className="w-[60rem] bg-[#1D1D1D] shadow-xl">
+    <div className="w-[60rem] bg-[#F9F9F9] shadow-sm">
       <div className="grid  gap-2 sm:grid-cols-3">
         {specialistData.map((data, index) => (
           <Link
             to={data.link}
             key={index}
-            className="p-4 border-4 border-transparent hover:bg-[#2F2F2F] "
+            className="p-4 border-4 border-transparent hover:bg-[#F0F0F0] "
           >
-            <h6 className="my-5 text-lg  font-medium  text-white">
+            <h6 className="my-5 text-lg  font-medium  text-[#262626]">
               {data.title}
             </h6>
-            <p className="text-sm mb-6 font-extralight text-white">
+            <p className="text-sm mb-6 text-[#262626]">
               {data.description.substring(0, 150)}
               {data.description.length > 150 && " ... Read More"}
             </p>

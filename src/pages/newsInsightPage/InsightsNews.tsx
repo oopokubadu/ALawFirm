@@ -24,7 +24,7 @@ const InsightsNews = () => {
               <a
                 target="_blank"
                 rel="noreferrer"
-                href="https://eightgeeksatlaw.wordpress.com/"
+                href="https://eightgeeksatlaw.wordpress.com/news-and-insights/"
                 data-aos="fade-up"
                 data-aos-offset="200"
                 data-aos-duration="1000"
@@ -44,7 +44,7 @@ const InsightsNews = () => {
                   our community of readers and engage with content designed to
                   enlighten and inspire
                 </p>
-                <button className="flex gap-x-2 underline items-center text-white ">
+                <button className="flex gap-x-2 underline items-center text-[#252626] ">
                   Visit
                   <CgArrowRightO />
                 </button>
@@ -71,7 +71,7 @@ const InsightsNews = () => {
                   our Library offers valuable insights to keep you ahead of the
                   curve.
                 </p>
-                <button className=" flex gap-x-2 underline items-center text-white ">
+                <button className=" flex gap-x-2 underline items-center text-[#252626] ">
                   Visit
                   <CgArrowRightO />
                 </button>

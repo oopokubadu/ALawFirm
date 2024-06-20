@@ -46,10 +46,15 @@ const Careers = () => {
             className="text-center"
           >
             <Player src={EmptyDrawer} className="player w-48" loop autoplay />
-            <button className="inline-flex cursor-pointer group transition ease-in-out delay-150  duration-300 items-center justify-center  bg-[#ED1B24] px-4 py-3 text-xl font-light text-white">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSd-XNsbSSQFF5xG1nxqvhA0dsZMcgGrk8VosjLv1rYYAzGztA/viewform?usp=send_form"
+              className="inline-flex cursor-pointer group transition ease-in-out delay-150  duration-300 items-center justify-center  bg-[#ED1B24] px-4 py-3 text-xl font-light text-white"
+            >
               <span className="group-hover:underline">Upload CV</span>
               <BsArrowUpRightCircle className="ml-5 h-5 w-5 group-hover:rotate-45" />
-            </button>
+            </a>
           </div>
         </div>
       </div>

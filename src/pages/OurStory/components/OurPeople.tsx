@@ -7,6 +7,7 @@ import {
   Kofi,
   Jude,
   Vanessa,
+  Naa,
 } from "../../../assets";
 
 const OurPeople = () => {
@@ -35,6 +36,13 @@ const OurPeople = () => {
       position: "Associate",
       portfolio: "https://www.linkedin.com/in/vanesa-akuetteh/",
     },
+
+    {
+      name: "Abiba Tornia",
+      image: Abiba,
+      position: "Associate",
+      portfolio: "https://www.linkedin.com/in/abiba-tornia-a026a766/",
+    },
     {
       name: "Jude Serbeh Boateng",
       image: Jude,
@@ -42,10 +50,11 @@ const OurPeople = () => {
       portfolio: "https://www.linkedin.com/in/jude-serbeh-boateng-816033149/",
     },
     {
-      name: "Abiba Tornia",
-      image: Abiba,
+      name: "Princess Judith Allotey",
+      image: Naa,
       position: "Associate",
-      portfolio: "https://www.linkedin.com/in/abiba-tornia-a026a766/",
+      portfolio:
+        "https://www.linkedin.com/in/princess-judith-n-a-allotey-0469a41a0/",
     },
   ];
   return (

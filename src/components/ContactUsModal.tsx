@@ -18,9 +18,10 @@ export const ContactUsModal = () => {
     <>
       <button
         data-aos="fade-up"
-        data-aos-offset="200"
+        data-aos-offset="100"
         data-aos-duration="1000"
         data-aos-once="true"
+        data-aos-delay="400"
         onClick={openModal}
         className="inline-flex cursor-pointer group transition ease-in-out delay-150  duration-300 items-center justify-center  bg-[#ED1B24] px-4 py-3 text-xl font-light text-white"
       >

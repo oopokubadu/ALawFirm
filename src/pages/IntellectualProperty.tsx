@@ -40,18 +40,18 @@ const IntellectualProperty = () => {
               data-aos-offset="200"
               data-aos-duration="1000"
               data-aos-once="true"
-              className="flex flex-col bg-right-bottom bg-no-repeat p-5  lg:p-8 bg-[#F9F9F9]"
+                     className="flex flex-col bg-right-bottom bg-no-repeat p-5 group  lg:p-8 bg-[#F9F9F9] hover:bg-[#ED1B24]  hover:transition hover:duration-300 hover:ease-in-out"
               style={{
                 backgroundImage: `url(${BgQuoteBlack})`,
                 backgroundSize: "15rem",
               }}
             >
-              <CgQuote className="text-7xl" />
-              <h2 className="text-2xl font-medium ">
+              <CgQuote className="text-7xl group-hover:text-white" />
+              <h2 className="text-2xl font-medium group-hover:text-white">
                 Intellectual property is the fuel of genius, the sustenance of
                 innovation, and the cornerstone of progress.
               </h2>
-              <p className="mt-4 font-bold text-sm">-Unknown</p>
+              <p className="mt-4 font-bold text-sm group-hover:text-white">-Unknown</p>
             </div>
             <div
               data-aos="fade-left"
@@ -60,7 +60,7 @@ const IntellectualProperty = () => {
               data-aos-once="true"
               className="rounded-3xl p-5 lg:p-10 md:col-span-2"
             >
-              <p className="text-sm font-light mb-5">
+              <p className="text-sm mb-5">
                 The ultimate fortress of innovation! Our team of legal
                 superheroes are dedicated to safeguarding your brilliant ideas
                 from the clutches of copycats and imitators. With our expertise
@@ -68,7 +68,7 @@ const IntellectualProperty = () => {
                 impenetrable shield around your intellectual property, ensuring
                 you reap the rewards of your hard work.
               </p>
-              <p className="text-sm font-light mb-5">
+              <p className="text-sm mb-5">
                 But that's not all! We are tech wizards, well-versed in the
                 rapidly evolving landscape of technology and its legal
                 implications. Whether it's data privacy, user agreements, or
@@ -77,7 +77,7 @@ const IntellectualProperty = () => {
                 guiding star and ensure that you stay compliant while still
                 pushing the boundaries of innovation.
               </p>
-              <p className="text-sm font-light">
+              <p className="text-sm ">
                 Join us in our quest for market disruption, as we set out to
                 redefine industries, revolutionize products, and create
                 groundbreaking solutions that change the world. When you geek
@@ -87,7 +87,7 @@ const IntellectualProperty = () => {
                 full potential of your ideas and revolutionize the world with
                 your innovations, partner with Eight Geeks, and together, we'll
                 forge a path to success and change the tech landscape forever!
-                🛡️💡🚀
+            
               </p>
             </div>
           </div>

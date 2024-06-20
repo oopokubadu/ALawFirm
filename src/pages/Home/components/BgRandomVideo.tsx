@@ -17,7 +17,7 @@ const BgRandomVideo: React.FC = () => {
   return (
     <div>
       <video
-        className="w-full h-[80vh] absolute object-cover"
+        className="w-full h-[100vh] absolute object-cover"
         src={videoUrl}
         muted
         loop

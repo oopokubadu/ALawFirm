@@ -35,7 +35,7 @@ const ExternalLinks = ({ url }) => {
 
   const iframeHeightClass = determineHeight();
   return (
-    <div className="overflow-hidden bg-[#1D1D1D]">
+    <div className="overflow-hidden bg-white">
       <iframe
         className={`max-w-[85rem] my-10 w-full mx-auto ${iframeHeightClass} overflow-y-auto overflow-x-hidden`}
         src={url}

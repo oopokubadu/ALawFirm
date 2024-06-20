@@ -51,6 +51,7 @@ export { default as Augustina } from "./photos/Augustina-Odame.webp";
 export { default as Vanessa } from "./photos/Vanesa-Akuetteh.webp";
 export { default as Abiba } from "./photos/Abiba-Tornia.webp";
 export { default as Jude } from "./photos/Jude.webp";
+export { default as Naa } from "./photos/Naa.webp";
 
 //Videos
 export { default as HeroVid1 } from "./videos/video_hero1.webm";

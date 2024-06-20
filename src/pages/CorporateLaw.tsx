@@ -1,5 +1,5 @@
 import React from "react";
-import { BgQuoteBlack, CorporateLawBgImage } from "../assets";
+import { BgQuote, BgQuoteBlack, CorporateLawBgImage } from "../assets";
 import { CgQuote } from "react-icons/cg";
 import FocusAreas from "./Home/components/FocusAreas";
 import { ContactUsModal } from "../components/ContactUsModal";
@@ -15,7 +15,7 @@ const CorporateLaw = () => {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-30"></div>
+        {/* <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-30"></div> */}
         <div className="max-w-[85rem] mx-auto px-4 lg:px-6 flex h-[70vh] items-end">
           <div>
             <h1
@@ -41,18 +41,20 @@ const CorporateLaw = () => {
               data-aos-offset="200"
               data-aos-duration="1000"
               data-aos-once="true"
-              className="flex flex-col bg-right-bottom bg-no-repeat p-5  lg:p-8 bg-[#F9F9F9]"
+              className="flex flex-col bg-right-bottom bg-no-repeat p-5 group  lg:p-8 bg-[#F9F9F9] hover:bg-[#ED1B24]  hover:transition hover:duration-300 hover:ease-in-out"
               style={{
                 backgroundImage: `url(${BgQuoteBlack})`,
                 backgroundSize: "15rem",
               }}
             >
-              <CgQuote className="text-7xl" />
-              <h2 className="text-2xl font-medium ">
+              <CgQuote className="text-7xl group-hover:text-white" />
+              <h2 className="text-2xl font-medium group-hover:text-white">
                 Corporate success lies in the harmony of strategic vision,
                 ethical principles, and meticulous legal protection.
               </h2>
-              <p className="mt-4 font-bold text-sm">-Mary Jo White</p>
+              <p className="mt-4 font-bold group-hover:text-white text-sm">
+                -Mary Jo White
+              </p>
             </div>
             <div
               data-aos="fade-left"
@@ -61,7 +63,7 @@ const CorporateLaw = () => {
               data-aos-once="true"
               className="rounded-3xl p-5 lg:p-10 md:col-span-2"
             >
-              <p className="text-sm font-light mb-5">
+              <p className="text-sm  mb-5">
                 With our comprehensive expertise in corporate law, we are here
                 to safeguard your business interests at every turn. Whether you
                 are navigating the intricacies of mergers and acquisitions,
@@ -72,7 +74,7 @@ const CorporateLaw = () => {
                 startups and emerging ventures, providing you with the solid
                 foundation needed to flourish in a competitive market.
               </p>
-              <p className="text-sm font-light mb-5">
+              <p className="text-sm  mb-5">
                 As technology enthusiasts ourselves, we are well-versed in the
                 complexities of technology-related contracts. From reviewing
                 software licenses to negotiating tech partnerships, our precise
@@ -83,7 +85,7 @@ const CorporateLaw = () => {
                 designed to minimize risks, optimize operations, and unlock new
                 opportunities for your company to thrive.
               </p>
-              <p className="text-sm font-light">
+              <p className="text-sm ">
                 No matter the size of your enterprise, our services are tailored
                 to meet your specific needs. Trust us to be your corporate
                 sentinels, continuously monitoring the legal landscape, and
@@ -92,7 +94,7 @@ const CorporateLaw = () => {
                 powerhouse of legal expertise, dedicated to defending your
                 corporate interests and empowering you to reach new heights of
                 success. Let's join forces and embark on a journey of corporate
-                excellence together! 🛡️💼🤝📝🚀
+                excellence together!
               </p>
             </div>
           </div>
