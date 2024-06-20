@@ -11,9 +11,10 @@ const OurStory = () => {
         <video
           className="w-full h-[80vh] absolute object-cover"
           src={HeroVid2}
-          muted
-          loop
-          autoPlay
+          muted={true}
+          loop={true}
+          autoPlay={true}
+          controls={false}
         />
 
         <div className="max-w-[85rem] mx-auto px-4 lg:px-6 flex h-[70vh] items-end">
