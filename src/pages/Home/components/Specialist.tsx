@@ -45,8 +45,8 @@ const Specialist = () => {
       <div className="max-w-[85rem] mx-auto px-4 pt-4 pb-10 sm:px-6 lg:px-8">
         <h1
           data-aos="fade-up"
-          data-aos-offset="300"
-          data-aos-duration="3000"
+          data-aos-offset="200"
+          data-aos-duration="1000"
           data-aos-once="true"
           className="text-[#1D1D1D] py-10 font-semibold text-3xl"
         >

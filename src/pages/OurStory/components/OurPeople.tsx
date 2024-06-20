@@ -50,11 +50,11 @@ const OurPeople = () => {
   ];
   return (
     <div className="pb-16">
-      <h1 className="text-3xl  md:text-3xl font-bold pt-12 pb-10 text-white ">
+      <h1 className="text-3xl  md:text-3xl font-bold pt-12 pb-10 text-[#262626] ">
         The brains behind the awesomeness
       </h1>
 
-      <div className="grid gap-5 mx-auto sm:grid-cols-2 lg:grid-cols-5 justify-center lg:max-w-screen-xl text-white">
+      <div className="grid gap-5 mx-auto sm:grid-cols-2 lg:grid-cols-5 justify-center lg:max-w-screen-xl text-[#262626]">
         {BoardMembers.map((data, index) => (
           <div
             data-aos="fade-up"
@@ -65,7 +65,7 @@ const OurPeople = () => {
             key={index}
             className=""
           >
-            <div className="relative bg-[#262626] mb-4 overflow-hidden">
+            <div className="relative bg-[#F9F9F9] mb-4 overflow-hidden">
               <img
                 className="h-56 pt-5 mx-auto object-cover transition-all duration-300 hover:scale-110"
                 src={data.image}
@@ -78,7 +78,7 @@ const OurPeople = () => {
                   <p className="text-sm font-bold">{data.name}</p>
                   <p className="text-sm font-light">{data.position}</p>
                 </div>
-                <FaLinkedin className="text-lg " />
+                <FaLinkedin className="text-lg text-[#0076B2]" />
               </div>
             </a>
           </div>

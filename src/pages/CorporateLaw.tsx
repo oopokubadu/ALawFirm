@@ -8,13 +8,14 @@ const CorporateLaw = () => {
   return (
     <div>
       <div
-        className="h-[80vh]"
+        className="h-[80vh] relative"
         style={{
           backgroundImage: `url(${CorporateLawBgImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
+        <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-30"></div>
         <div className="max-w-[85rem] mx-auto px-4 lg:px-6 flex h-[70vh] items-end">
           <div>
             <h1
