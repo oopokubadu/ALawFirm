@@ -15,7 +15,8 @@ const BgRandomVideo: React.FC = () => {
   useState(getRandomVideo);
 
   return (
-    <div>
+    <div className="">
+      <div className="absolute bottom-0 left-0 right-0 top-0 h-[100vh] w-full overflow-hidden bg-black bg-fixed opacity-20"></div>
       <video
         className="w-full h-[100vh] absolute object-cover"
         src={videoUrl}
@@ -23,8 +24,6 @@ const BgRandomVideo: React.FC = () => {
         loop={true}
         autoPlay={true}
         controls={false}
-        
-        
       />
     </div>
   );

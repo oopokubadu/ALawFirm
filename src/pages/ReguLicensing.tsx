@@ -40,14 +40,34 @@ const ReguLicensing = () => {
               data-aos-offset="200"
               data-aos-duration="1000"
               data-aos-once="true"
-                     className="flex flex-col bg-right-bottom bg-no-repeat p-5 group  lg:p-8 bg-[#F9F9F9] hover:bg-[#ED1B24] hover:transition hover:duration-300 hover:ease-in-out"
-              style={{
-                backgroundImage: `url(${BgQuote})`,
-                backgroundSize: "15rem",
-              }}
+              className="relative flex flex-col p-5 group lg:p-8 transition duration-300 ease-in-out delay-150 bg-[#F9F9F9] hover:bg-[#ED1B24]"
             >
+              <div className="absolute bottom-0 right-0">
+                <svg
+                  className="fill-[#f9f9f9] stroke-[#262626] group-hover:fill-[#ED1B24] group-hover:stroke-white"
+                  width="244"
+                  height="108"
+                  viewBox="0 0 294 158"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask
+                    id="mask0_335_440"
+                    style={{ maskType: "alpha" }}
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="294"
+                    height="158"
+                  >
+                    <rect width="294" height="158" />
+                  </mask>
+                  <g mask="url(#mask0_335_440)">
+                    <path d="M261.662 45.1916L261.949 44.5001L261.2 44.5001L180.2 44.5001L179.798 44.5001L179.712 44.8929L147.312 192.493L147.179 193.1L147.8 193.1L200 193.1L200.334 193.1L200.462 192.792L261.662 45.1916ZM145.862 45.1916L146.149 44.5001L145.4 44.5001L65.0002 44.5001L64.5996 44.5001L64.5123 44.891L31.5122 192.491L31.3761 193.1L32.0002 193.1L84.2002 193.1L84.5341 193.1L84.6621 192.792L145.862 45.1916Z" />
+                  </g>
+                </svg>
+              </div>
               <CgQuote className="text-7xl group-hover:text-white" />
-              <h2 className="text-2xl font-medium group-hover:text-white">
+              <h2 className="text-2xl z-50 font-medium group-hover:text-white">
                 The strength of the law lies not in its mere existence, but in
                 its ability to protect and uphold the rights and dignity of
                 every individual in society.

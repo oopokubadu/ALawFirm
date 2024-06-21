@@ -8,6 +8,7 @@ const OurStory = () => {
   return (
     <div>
       <div className="h-[80vh] relative">
+      <div className="absolute bottom-0 left-0 right-0 top-0 h-[80vh] w-full overflow-hidden bg-black bg-fixed opacity-20"></div>
         <video
           className="w-full h-[80vh] absolute object-cover"
           src={HeroVid2}
