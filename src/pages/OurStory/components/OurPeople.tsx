@@ -58,12 +58,12 @@ const OurPeople = () => {
     },
   ];
   return (
-    <div className="pb-16 overflow-x-hidden">
+    <div className="pb-16 mx-auto">
       <h1 className="text-2xl  md:text-3xl font-bold pt-12 pb-10 text-[#262626] ">
         The brains behind the awesomeness
       </h1>
 
-      {/* <div className="grid gap-5 mx-auto sm:grid-cols-2 lg:grid-cols-5 justify-center lg:max-w-screen-xl text-[#262626]">
+      <div className="grid gap-5 mx-auto sm:grid-cols-2 lg:grid-cols-5 justify-center lg:max-w-screen-xl text-[#262626]">
         {BoardMembers.map((data, index) => (
           <div
             data-aos="fade-up"
@@ -76,7 +76,7 @@ const OurPeople = () => {
           >
             <div className="relative bg-[#F9F9F9] mb-4 overflow-hidden">
               <img
-                className="h-56 pt-5 mx-auto object-cover transition-all duration-300 hover:scale-110"
+                className="h-[17rem] w-56 pt-5 mx-auto object-fill transition-all duration-300 hover:scale-110"
                 src={data.image}
                 alt="Person"
               />
@@ -92,33 +92,8 @@ const OurPeople = () => {
             </a>
           </div>
         ))}
-      </div> */}
-      <ul
-        role="list"
-        className="mx-auto mt-20 grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-5"
-      >
-        {BoardMembers.map((person) => (
-          <li key={person.name}>
-            <div className="relative bg-[#F9F9F9] mb-4 overflow-hidden">
-              <img
-                className="aspect-[10/16]  pt-3 w-full rounded-2xl object-cover transition-all duration-300 hover:scale-110"
-                src={person.image}
-                alt=""
-              />
-            </div>
-            <a href={person.portfolio}>
-              <div className="flex flex-row items-center mt-4 justify-between">
-                <div>
-                  <p className="text-sm font-bold">{person.name}</p>
-                  <p className="text-sm font-light">{person.position}</p>
-                </div>
-                <FaLinkedin className="text-lg text-[#0076B2]" />
-              </div>
-            </a>
-            {/* <p className="text-sm leading-6 text-gray-500">{person.location}</p> */}
-          </li>
-        ))}
-      </ul>
+      </div>
+   
     </div>
   );
 };
