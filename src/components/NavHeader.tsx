@@ -129,12 +129,12 @@ const NavHeader = () => {
             </NavLink>
           </div>
 
-          <Menu as="div" className="h-20 relative md:hidden z-50">
+          <Menu as="div" className="h-20 flex relative md:hidden z-50">
             <Menu.Button
               type="button"
               className="inline-flex cursor-pointer items-center justify-center rounded-xl p-2 font-semibold"
             >
-              <HiMenuAlt3 className="h-7 w-7 text-white" />
+              <HiMenuAlt3 className="h-7 w-7 text-white my-auto " />
             </Menu.Button>
             <Transition
               as={Fragment}
