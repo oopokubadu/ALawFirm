@@ -76,8 +76,9 @@ const OurPeople = () => {
           >
             <div className="relative bg-[#F9F9F9] mb-4 overflow-hidden">
               <img
-                className="h-[17rem] w-56 pt-5 mx-auto object-fill transition-all duration-300 hover:scale-110"
+                className="h-[17rem] w-56  mx-auto object-cover transition-all duration-300 hover:scale-110"
                 src={data.image}
+                style={{objectPosition: "50%"}}
                 alt="Person"
               />
             </div>
