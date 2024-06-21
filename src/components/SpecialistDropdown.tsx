@@ -83,7 +83,9 @@ const SpecialitiesContent = () => {
             </h6>
             <p className="text-sm mb-6 text-[#262626]">
               {data.description.substring(0, 150)}
-              {data.description.length > 150 && " ... Read More"}
+              {data.description.length > 150 && (
+                <span className="font-bold"> ... Read More</span>
+              )}
             </p>
           </Link>
         ))}
