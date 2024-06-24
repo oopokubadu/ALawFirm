@@ -23,6 +23,7 @@ export { default as BgQuote } from "./images/bg_quote.svg";
 export { default as BgQuoteBlack } from "./images/bg_quote_black.svg";
 export { default as BgBlog } from "./images/img_bg_blog.webp";
 export { default as SafeImg } from "./images/img_safe.svg";
+export { default as RepresentImg } from "./images/img_who-we-represent.webp";
 
 //icons
 export { default as Corporate } from "./icons/ic_corporate.svg";
