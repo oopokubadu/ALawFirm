@@ -83,7 +83,7 @@ const WhoWeAre = () => {
           data-aos-once="true"
           className="flex flex-col justify-center p-8 bg-white lg:p-16 lg:pl-10 lg:w-[70%]"
         >
-          <h2 className="text-base font-bold mb-2">Who We Repreent</h2>
+          <h2 className="text-base font-bold mb-2">Who We Are</h2>
           <p className="text-base mb-3 text-[#262626]">
             We are a team of lawyers who are fiercely passionate about
             technology and innovation; and the many opportunities they present
@@ -94,6 +94,7 @@ const WhoWeAre = () => {
             profitably explore the boundaries of technology innovation,
             particularly in Africa.
           </p>
+          <h2 className="text-base font-bold mb-2">Who We Repreent</h2>
           <p className="text-base text-[#262626]">
             We represent technology pioneers and disruptors associated with
             market-changing innovations across the gamut of business size and

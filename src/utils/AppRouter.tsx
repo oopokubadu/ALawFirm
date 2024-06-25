@@ -31,7 +31,7 @@ const AppRouter = () => {
         <Route
           path="library"
           element={
-            <ExternalLinks url="https://fliphtml5.com/bookcase/pqijl/green" />
+            <ExternalLinks url="https://fliphtml5.com/bookcase/pqijl/silver" />
           }
         />
         <Route path="news">

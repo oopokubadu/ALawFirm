@@ -1,6 +1,5 @@
 import React from "react";
-
-import { BgQuote, BgQuoteBlack, Hero2, HeroVid2 } from "../../assets";
+import { HeroVid2 } from "../../assets";
 import OurPeople from "./components/OurPeople";
 import WhoWeAre from "./components/WhoWeAre";
 
