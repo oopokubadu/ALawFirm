@@ -68,12 +68,12 @@ const WhoWeAre = () => {
           data-aos-offset="200"
           data-aos-duration="1000"
           data-aos-once="true"
-          className="relative lg:w-[30%]"
+          className="relative lg:w-[30%] overflow-hidden"
         >
           <img
             src={RepresentImg}
             alt=""
-            className="object-cover w-full lg:absolute h-80 lg:h-full"
+            className="object-cover w-full lg:absolute h-80 lg:h-full transition-all duration-300 hover:scale-110"
           />
         </div>
         <div
