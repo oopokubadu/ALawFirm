@@ -10,6 +10,7 @@ import {
   Naa,
 } from "../../../assets";
 import { GoDotFill } from "react-icons/go";
+import { IoCloseCircle } from "react-icons/io5";
 
 const OurPeople = () => {
   const [openModalIndex, setOpenModalIndex] = React.useState<number | null>(
@@ -201,14 +202,20 @@ const OurPeople = () => {
                   onClick={handleCloseModal}
                 >
                   <div
-                    className="relative w-auto my-6 mx-auto max-w-7xl"
+                    className=" w-auto my-6 mx-auto max-w-7xl"
                     onClick={(e) => e.stopPropagation()}
                   >
+                    <div className="relative ">
+                      <IoCloseCircle
+                        onClick={handleCloseModal}
+                        className="fixed block z-50 top-8 right-8 lg:top-16 lg:right-40 text-3xl text-gray-800 cursor-pointer hover:text-red-500"
+                      />
+                    </div>
                     {/*content*/}
                     <div className="bg-white border border-gray-200 shadow">
                       <div className="bg-[#F9F9F9]">
                         <img
-                          className="h-[50rem] pt-16 mx-auto object-cover"
+                          className="h-[50rem]  pt-16 mx-auto object-cover  "
                           src={data.image}
                           alt=""
                         />
