@@ -212,20 +212,21 @@ const OurPeople = () => {
                       />
                     </div>
                     {/*content*/}
-                    <div className="bg-white border border-gray-200 shadow">
+                    <div className="bg-white border border-gray-200 shadow ">
                       <div className="bg-[#F9F9F9]">
                         <img
-                          className="h-[50rem]  pt-16 mx-auto object-cover  "
+                          className="h-[70rem] mx-auto object-cover object-center"
                           src={data.image}
                           alt=""
+                          style={{ objectPosition: "0rem 40rem" }}
                         />
                       </div>
                       <div className="p-5 lg:p-10">
-                        <a href="#">
+                        <div>
                           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
                             {data.name}
                           </h5>
-                        </a>
+                        </div>
                         <p className="mb-8"> {data.position}</p>
 
                         {data.bio1 && (
