@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { HeroVid1, HeroVid2, HeroVid3 } from "../../../assets";
+import { HeroVid1, HeroVid2, HeroVid3, MobileHeroBg } from "../../../assets";
 
 const videos = [HeroVid1, HeroVid2, HeroVid3];
 
@@ -20,14 +20,21 @@ const BgRandomVideo: React.FC = () => {
   return (
     <div className="">
       <video
-        className="w-full h-[100vh] absolute object-cover"
+        className="w-full h-[100vh] absolute object-cover hidden lg:block"
         src={videoUrl}
         muted={true}
         loop={true}
         autoPlay={true}
         controls={false}
       />
-      <div className="absolute bottom-0 left-0 right-0 top-0 h-[100vh] w-full overflow-hidden bg-black bg-fixed bg-opacity-10"></div>
+      <div
+        style={{
+          backgroundImage: `url(${MobileHeroBg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        className="absolute bottom-0 left-0 right-0 top-0 h-[80vh] w-full overflow-hidden bg-black bg-fixed lg:hidden"
+      ></div>
     </div>
   );
 };
