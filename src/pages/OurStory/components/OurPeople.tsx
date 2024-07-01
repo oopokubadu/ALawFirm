@@ -214,12 +214,14 @@ const OurPeople = () => {
                     {/*content*/}
                     <div className="bg-white border border-gray-200 shadow ">
                       <div className="bg-[#F9F9F9]">
-                        <img
-                          className=" w-full h-[70rem] mx-auto object-cover"
-                          src={data.image}
-                          alt=""
-                          style={{ objectPosition: "0rem 40rem" }}
-                        />
+                        <div className="aspect-w-1 aspect-h-1">
+                          <img
+                            className="w-full h-[60rem] object-cover object-center mx-auto"
+                            src={data.image}
+                            alt=""
+                            style={{objectPosition: "0rem 30rem"}}
+                          />
+                        </div>
                       </div>
                       <div className="p-5 lg:p-10">
                         <div>

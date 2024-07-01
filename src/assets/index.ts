@@ -24,6 +24,7 @@ export { default as BgQuoteBlack } from "./images/bg_quote_black.svg";
 export { default as BgBlog } from "./images/img_bg_blog.webp";
 export { default as SafeImg } from "./images/img_safe.svg";
 export { default as RepresentImg } from "./images/img_who-we-represent.webp";
+export { default as MobileStoryImg } from "./images/img_bg_story_mobile.webp";
 
 //icons
 export { default as Corporate } from "./icons/ic_corporate.svg";
@@ -61,3 +62,4 @@ export { default as HeroVid3 } from "./videos/video_hero3.webm";
 
 //gifs
 export { default as EmptyDrawer } from "./gifs/drawer.json";
+export { default as MobileHeroBg } from "./images/img_bg_home_mobile.gif";
