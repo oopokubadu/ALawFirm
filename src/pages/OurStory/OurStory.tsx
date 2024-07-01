@@ -8,21 +8,22 @@ const OurStory = () => {
     <div>
       <div className="h-[80vh] relative">
         <video
-          className="w-full h-[80vh] absolute object-cover hidden lg:block"
+          className="w-full h-[80vh] absolute object-cover"
           src={HeroVid2}
           muted={true}
           loop={true}
           autoPlay={true}
           controls={false}
         />
-        <div
+        {/* <div
           style={{
             backgroundImage: `url(${MobileStoryImg})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
           className="absolute bottom-0 left-0 right-0 top-0 h-[80vh] w-full overflow-hidden bg-black bg-fixed lg:hidden "
-        ></div>
+        ></div> */}
+        <div className="absolute bottom-0 left-0 right-0 top-0 h-[100vh] w-full overflow-hidden bg-black bg-fixed bg-opacity-10"></div>
 
         <div className="max-w-[85rem] mx-auto px-4 lg:px-6 flex h-[70vh] items-end">
           <div>
