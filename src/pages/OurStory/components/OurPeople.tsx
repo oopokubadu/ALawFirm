@@ -215,7 +215,7 @@ const OurPeople = () => {
                     <div className="bg-white border border-gray-200 shadow ">
                       <div className="bg-[#F9F9F9]">
                         <img
-                          className="h-[70rem] mx-auto object-cover object-center"
+                          className=" w-full h-[70rem] mx-auto object-cover"
                           src={data.image}
                           alt=""
                           style={{ objectPosition: "0rem 40rem" }}
