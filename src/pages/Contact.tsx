@@ -9,8 +9,8 @@ const Contact = () => {
     email: "",
     subject: "Eight Geeks Website",
     message: "",
-    recipients: "lntori99@gmail.com",
-    domain: "http://localhost:3000",
+    recipients: "opokubadu18@gmail.com",
+    domain: "https://newwebsiteeg.netlify.app",
     def_signature: "False",
   });
   const [sendEmail, { isLoading }] = useSendEmailMutation();
@@ -28,16 +28,14 @@ const Contact = () => {
 
     const form = new FormData();
     form.append("sender_name", formData.sender_name);
-    form.append("email", formData.email);
+    form.append("message", `Email: ${formData.email} <br/><br/> ${formData.message}`);
     form.append("subject", formData.subject);
-    form.append("message", formData.message);
     form.append("recipients", formData.recipients);
     form.append("domain", formData.domain);
     form.append("def_signature", formData.def_signature);
 
     const confirmationForm = new FormData();
-    confirmationForm.append("sender_name", "Eight Geeks");
-    confirmationForm.append("email", "noreply@theeightgeeks.com");
+    confirmationForm.append("sender_name", "noreply@theeightgeeks.com");
     confirmationForm.append("subject", "Email Sent");
     confirmationForm.append(
       "message",

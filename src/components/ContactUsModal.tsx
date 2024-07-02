@@ -2,6 +2,8 @@ import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { BsArrowUpRightCircle } from "react-icons/bs";
+import { useSendEmailMutation } from "../services/email-service";
+import toast from "react-hot-toast";
 
 export const ContactUsModal = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +15,51 @@ export const ContactUsModal = () => {
   function openModal() {
     setIsOpen(true);
   }
+
+  const [formData, setFormData] = useState({
+    sender_name: "",
+    subject: "Eight Geeks Website",
+    message: "",
+    recipients: "opokubadu18@gmail.com",
+    domain: "https://newwebsiteeg.netlify.app",
+    def_signature: "False",
+  });
+  const [sendEmail, { isLoading }] = useSendEmailMutation();
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const form = new FormData();
+    form.append("sender_name", formData.sender_name);
+    form.append("message", formData.message);
+    form.append("subject", formData.subject);
+    form.append("recipients", formData.recipients);
+    form.append("domain", formData.domain);
+    form.append("def_signature", formData.def_signature);
+
+    try {
+      await sendEmail(form);
+      toast.success("Email sent successfully! We will get back to you soon");
+      // toast.success("Confirmation email sent successfully!");
+      closeModal();
+      setFormData((prev) => ({
+        ...prev,
+        sender_name: "",
+        message: "",
+      }));
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      toast.error("Failed to send email.");
+    }
+  };
 
   return (
     <>
@@ -70,7 +117,7 @@ export const ContactUsModal = () => {
                     We’ll reach out momentarily.
                   </Dialog.Title>
 
-                  <form>
+                  <form onSubmit={handleSubmit}>
                     <div className="my-8">
                       <label
                         htmlFor="hs-feedback-post-comment-name-1"
@@ -80,7 +127,9 @@ export const ContactUsModal = () => {
                       </label>
                       <input
                         type="text"
-                        name="name"
+                        name="sender_name"
+                        value={formData.sender_name}
+                        onChange={handleChange}
                         className="py-4 px-5 block w-full bg-[#F5F5F5] text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
                         placeholder="What should we call you?"
                       />
@@ -94,22 +143,23 @@ export const ContactUsModal = () => {
                       </label>
                       <input
                         type="text"
-                        name="name"
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
                         className="py-4 px-5 block w-full bg-[#F5F5F5] text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
                         placeholder="Email or Phone? Whichever’s your jam."
                       />
                     </div>
+                    <div className="flex h-16 flex-shrink-0 items-center mb-5 space-x-2  px-6 ">
+                      <button
+                        type="submit"
+                        disabled={!formData.sender_name || !formData.message}
+                        className="inline-flex cursor-pointer w-32 items-center justify-center  bg-red-600 px-4 py-2.5 text-sm font-semibold text-white "
+                      >
+                        Submit
+                      </button>
+                    </div>
                   </form>
-                </div>
-
-                <div className="flex h-16 flex-shrink-0 items-center mb-5 space-x-2  px-6 ">
-                  <button
-                    type="button"
-                    onClick={closeModal}
-                    className="inline-flex cursor-pointer w-32 items-center justify-center  bg-red-600 px-4 py-2.5 text-sm font-semibold text-white "
-                  >
-                    Submit
-                  </button>
                 </div>
               </Dialog.Panel>
             </Transition.Child>
