@@ -229,7 +229,7 @@ const OurPeople = () => {
                     <div className="bg-white border border-gray-200 shadow ">
                       <div className="bg-[#F9F9F9]">
                         <img
-                          className=" h-[60rem] pt-[33rem] object-cover  mx-auto"
+                          className=" h-[60rem] pt-[33rem] object-cover object-center mx-auto"
                           src={data.modalImage}
                           alt=""
                           // style={{ objectPosition: "0rem 20rem" }}
