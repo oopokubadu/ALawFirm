@@ -220,7 +220,7 @@ const OurPeople = () => {
             {openModalIndex === index ? (
               <>
                 <div
-                  className="justify-center my-4 lg:my-10 items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
+                  className="justify-center my-4 lg:my-10 items-center flex fixed inset-0 z-50 outline-none focus:outline-none"
                   onClick={handleCloseModal}
                 >
                   <div
@@ -230,7 +230,7 @@ const OurPeople = () => {
                     <div className="relative ">
                       <IoCloseCircle
                         onClick={handleCloseModal}
-                        className="fixed block z-50 top-8 right-8 lg:top-16 lg:right-40 text-3xl text-gray-800 cursor-pointer hover:text-red-500"
+                        className="fixed block z-50 top-12 right-8 lg:top-16 lg:right-40 text-3xl text-gray-800 cursor-pointer hover:text-red-500"
                       />
                     </div>
                     {/*content*/}
