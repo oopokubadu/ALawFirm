@@ -14,6 +14,7 @@ const OurStory = () => {
           loop={true}
           autoPlay={true}
           controls={false}
+          playsInline
         />
         {/* <div
           style={{

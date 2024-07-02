@@ -26,6 +26,7 @@ const BgRandomVideo: React.FC = () => {
         loop={true}
         autoPlay={true}
         controls={false}
+        playsInline
       />
       {/* <div
         style={{
