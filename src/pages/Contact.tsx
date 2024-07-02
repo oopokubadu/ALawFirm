@@ -145,7 +145,12 @@ const Contact = () => {
                     </div>
                     <button
                       type="submit"
-                      disabled={isLoading}
+                      disabled={
+                        isLoading ||
+                        !formData.sender_name ||
+                        !formData.email ||
+                        !formData.message
+                      }
                       className="w-full h-12 px-6 text-indigo-100 transition-colors duration-150 bg-[#ED1B24] rounded-lg focus:shadow-outline hover:bg-[#ed1b26c7]"
                     >
                       Submit
