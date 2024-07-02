@@ -18,6 +18,7 @@ import {
 } from "../../../assets";
 import { GoDotFill } from "react-icons/go";
 import { IoCloseCircle } from "react-icons/io5";
+import { BsArrowUpRightCircle } from "react-icons/bs";
 
 const OurPeople = () => {
   const [openModalIndex, setOpenModalIndex] = React.useState<number | null>(
@@ -236,18 +237,27 @@ const OurPeople = () => {
                         />
                       </div>
                       <div className="p-5 lg:p-10">
-                        <div>
-                          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
-                            {data.name}
-                          </h5>
+                        <div className="mb-8 flex justify-between items-center flex-wrap sm:flex-nowrap">
+                          <div>
+                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                              {data.name}
+                            </h5>
+                            <p className="mb-8">
+                              {" "}
+                              {data.position}{" "}
+                              <a href={data.portfolio}>
+                                <FaLinkedin className="text-lg inline-flex text-[#0076B2]" />
+                              </a>
+                            </p>
+                          </div>
+
+                          <button className="inline-flex cursor-pointer group transition ease-in-out delay-150  duration-300 items-center justify-center  bg-[#262626] px-4 py-3 text-sm text-white">
+                            <span className="group-hover:underline">
+                              Send a message
+                            </span>
+                            <BsArrowUpRightCircle className="ml-5 h-5 w-5 group-hover:rotate-45" />
+                          </button>
                         </div>
-                        <p className="mb-8">
-                          {" "}
-                          {data.position}{" "}
-                          <a href={data.portfolio}>
-                            <FaLinkedin className="text-lg inline-flex text-[#0076B2]" />
-                          </a>
-                        </p>
 
                         {data.bio1 && (
                           <p className="mb-3 font-normal text-gray-700">
