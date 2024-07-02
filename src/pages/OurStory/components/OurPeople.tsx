@@ -28,6 +28,7 @@ const OurPeople = () => {
     {
       name: "Kofi Owusu-Nhyira",
       image: Kofi,
+      email: "mailto:info@theeightgeeks.com",
       modalImage: KofiModal,
       position: "Founding Partner",
       portfolio: "https://www.linkedin.com/in/kofiowusu-nhyira/",
@@ -46,6 +47,7 @@ const OurPeople = () => {
       name: "Emmanuel Saah",
       image: Emmanuel,
       modalImage: EmmanuelModal,
+      email: "mailto:e.saah@theeightgeeks.com",
       position: "Managing Partner",
       portfolio: "https://www.linkedin.com/in/emmanuel-saah-4a451a222/",
       bio1: "Emmanuel Saah is the attorney in charge of corporate and commercial practice at EGL.",
@@ -70,6 +72,7 @@ const OurPeople = () => {
       name: "Augustina Odame",
       image: Augustina,
       modalImage: AugustinaModal,
+      email: "mailto:a.odame@theeightgeeks.com",
       position: "Consultant",
       portfolio: "https://www.linkedin.com/in/augustinaodame/",
       bio1: "Dr. Augustina Odame is an economist (PhD) and consultant with broad experience and expertise in business set-up and regulatory compliance processes for technology firms across several African markets.",
@@ -92,6 +95,7 @@ const OurPeople = () => {
       name: "Vanesa Akuetteh",
       image: Vanessa,
       modalImage: VanessaModal,
+      email: "mailto:v.akuetteh@theeightgeeks.com",
       position: "Associate",
       portfolio: "https://www.linkedin.com/in/vanesa-akuetteh/",
       bio1: "Vanesa Akuetteh is an Associate at Eight Geeks at Law with over 5 years of experience in the legal space. She specializes in transactional law and works across the corporate and commercial, licensing and regulatory and Intellectual Property teams. ",
@@ -115,6 +119,7 @@ const OurPeople = () => {
       name: "Abiba Tornia",
       image: Abiba,
       modalImage: AbibaModal,
+      email: "mailto:a.tornia@theeightgeeks.com",
       position: "Associate",
       portfolio: "https://www.linkedin.com/in/abiba-tornia-a026a766/",
       bio1: "Abiba Tornia is an associate at Eight Geeks at Law. Her practice is mainly on regulatory and licensing with a focus on Telecommunication Law. She was the winner of best student in Jurisprudence and Evidence from the University of Buckingham and remains very passionate about electronic evidence and demystifying the admissibility of electronic evidence.",
@@ -137,6 +142,7 @@ const OurPeople = () => {
       name: "Jude Serbeh Boateng",
       image: Jude,
       modalImage: JudeModal,
+      email: "mailto:j.serbehboateng@theeightgeeks.com",
       position: "Associate",
       portfolio: "https://www.linkedin.com/in/jude-serbeh-boateng-816033149/",
       bio1: "Jude Serbeh-Boateng is an Associate at Eight Geeks at Law. His focus areas are Regulatory  and  Licensing,  Mergers  and Acquisitions,  Corporate  Restructuring,  Corporate  Finance, Strategic Advisory and Compliance. Since joining Eight Geeks, Jude has played a vital role in helping Tech Companies develop new business models in alignment with existing domestic and international regulations.",
@@ -159,6 +165,7 @@ const OurPeople = () => {
       image: Naa,
       modalImage: NaaModal,
       position: "Associate",
+      email: "mailto:p.allotey@theeightgeeks.com",
       portfolio:
         "https://www.linkedin.com/in/princess-judith-n-a-allotey-0469a41a0/",
       bio1: "Princess Allotey is an associate at Eight Geeks at Law with interests in various areas and fields of law. Her work at Eight Geeks spans corporate and commercial issues including mergers and acquisitions, corporate restructuring and advisory, regulatory and licensing and intellectual property protection. She also has interest in digital health, artificial intelligence and blockchain technology.",
@@ -251,12 +258,12 @@ const OurPeople = () => {
                             </p>
                           </div>
 
-                          <button className="inline-flex cursor-pointer group transition ease-in-out delay-150  duration-300 items-center justify-center  bg-[#262626] px-4 py-3 text-sm text-white">
+                          <a href={data.email} className="inline-flex cursor-pointer group transition ease-in-out delay-150  duration-300 items-center justify-center  bg-[#262626] px-4 py-3 text-sm text-white">
                             <span className="group-hover:underline">
                               Send a message
                             </span>
                             <BsArrowUpRightCircle className="ml-5 h-5 w-5 group-hover:rotate-45" />
-                          </button>
+                          </a>
                         </div>
 
                         {data.bio1 && (
