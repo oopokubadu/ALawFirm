@@ -33,7 +33,7 @@ const BgRandomVideo: React.FC = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="absolute bottom-0 left-0 right-0 top-0 h-[80vh] w-full overflow-hidden bg-black bg-fixed lg:hidden"
+        className="absolute bottom-0 left-0 right-0 top-0 h-[100vh] w-full overflow-hidden bg-black bg-fixed lg:hidden"
       ></div>
     </div>
   );
