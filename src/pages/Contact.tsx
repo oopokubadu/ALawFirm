@@ -10,7 +10,7 @@ const Contact = () => {
     subject: "Eight Geeks Website",
     message: "",
     recipients: "opokubadu18@gmail.com",
-    domain: "https://newwebsiteeg.netlify.app",
+    domain: "newwebsiteeg.netlify.app",
     def_signature: "False",
   });
   const [sendEmail, { isLoading }] = useSendEmailMutation();
