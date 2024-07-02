@@ -54,6 +54,13 @@ export { default as Vanessa } from "./photos/Vanesa-Akuetteh.webp";
 export { default as Abiba } from "./photos/Abiba-Tornia.webp";
 export { default as Jude } from "./photos/Jude.webp";
 export { default as Naa } from "./photos/Naa.webp";
+export { default as KofiModal } from "./photos/img_modal_header_kofi.webp";
+export { default as EmmanuelModal } from "./photos/img_modal_header_emmanuel_saah.webp";
+export { default as AugustinaModal } from "./photos/img_modal_header_augustina.webp";
+export { default as VanessaModal } from "./photos/img_modal_header_vanessa.webp";
+export { default as AbibaModal } from "./photos/img_modal_header_abiba.webp";
+export { default as JudeModal } from "./photos/img_modal_header_jude.webp";
+export { default as NaaModal } from "./photos/img_modal_header_Naa.webp";
 
 //Videos
 export { default as HeroVid1 } from "./videos/video_hero1.webm";

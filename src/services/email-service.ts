@@ -3,13 +3,13 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const emailService = createApi({
   reducerPath: "emailService",
   baseQuery: fetchBaseQuery({
-    baseUrl: `https://theeightgeeks.com`,
+    baseUrl: "http://portals.nsano.com:7474",
   }),
   tagTypes: ["Email"],
   endpoints: (build) => ({
     sendEmail: build.mutation<any[], FormData>({
       query: (body: FormData) => ({
-        url: "/contactus.php",
+        url: "/sendmail",
         method: "POST",
         body: body,
       }),

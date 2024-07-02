@@ -1,11 +1,13 @@
 import React from "react";
 import AppRouter from "./AppRouter";
 import { ScrollToTop } from "../components/ScrollToTop";
+import { Toaster } from "react-hot-toast";
 
 const StartUp = () => {
   return (
     <div>
-      <ScrollToTop/>
+      <ScrollToTop />
+      <Toaster />
       <AppRouter />
     </div>
   );

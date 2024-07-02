@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 import { SafeImg } from "../assets";
 import { useSendEmailMutation } from "../services/email-service";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: "",
+    sender_name: "",
     email: "",
     subject: "Eight Geeks Website",
     message: "",
+    recipients: "opokubadu18@gmail.com",
+    domain: "https://newwebsiteeg.netlify.app",
+    def_signature: "False",
   });
-  const [sendEmail, { isLoading, isError, isSuccess }] = useSendEmailMutation();
+  const [sendEmail, { isLoading }] = useSendEmailMutation();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,20 +25,46 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     const form = new FormData();
-    form.append("name", formData.name);
+    form.append("sender_name", formData.sender_name);
     form.append("email", formData.email);
     form.append("subject", formData.subject);
     form.append("message", formData.message);
+    form.append("recipients", formData.recipients);
+    form.append("domain", formData.domain);
+    form.append("def_signature", formData.def_signature);
+
+    const confirmationForm = new FormData();
+    confirmationForm.append("sender_name", "Eight Geeks");
+    confirmationForm.append("email", "noreply@theeightgeeks.com");
+    confirmationForm.append("subject", "Email Sent");
+    confirmationForm.append(
+      "message",
+      "We have received your email, we will reach out to you soon."
+    );
+    confirmationForm.append("recipients", formData.email);
+    confirmationForm.append("domain", formData.domain);
+    confirmationForm.append("def_signature", "False");
 
     try {
       await sendEmail(form);
-      alert("Email sent successfully!");
+      toast.success("Email sent successfully!");
+      await sendEmail(confirmationForm);
+      // toast.success("Confirmation email sent successfully!");
+
+      setFormData((prev) => ({
+        ...prev,
+        sender_name: "",
+        email: "",
+        message: "",
+      }));
     } catch (error) {
       console.error("Failed to send email:", error);
-      alert("Failed to send email.");
+      toast.error("Failed to send email.");
     }
   };
+
   return (
     <div className="overflow-x-hidden">
       <div className=" bg-white">
@@ -84,8 +114,8 @@ const Contact = () => {
                         What’s your name?
                       </label>
                       <input
-                        name="name"
-                        value={formData.name}
+                        name="sender_name"
+                        value={formData.sender_name}
                         onChange={handleChange}
                         className="py-4 px-5 block w-full bg-[#F5F5F5] text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none"
                         placeholder="What should we call you?"
@@ -113,14 +143,14 @@ const Contact = () => {
                         className="py-4 px-3 my-4 block w-full h-36 bg-[#F5F5F5] text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none "
                       />
                     </div>
+                    <button
+                      type="submit"
+                      disabled={isLoading}
+                      className="w-full h-12 px-6 text-indigo-100 transition-colors duration-150 bg-[#ED1B24] rounded-lg focus:shadow-outline hover:bg-[#ed1b26c7]"
+                    >
+                      Submit
+                    </button>
                   </form>
-                  <button
-                    type="submit"
-                    disabled={isLoading}
-                    className="w-full h-12 px-6 text-indigo-100 transition-colors duration-150 bg-[#ED1B24] rounded-lg focus:shadow-outline hover:bg-[#ed1b26c7]"
-                  >
-                    Submit
-                  </button>
                 </div>
               </div>
             </div>

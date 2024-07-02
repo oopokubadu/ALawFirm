@@ -8,6 +8,13 @@ import {
   Jude,
   Vanessa,
   Naa,
+  KofiModal,
+  EmmanuelModal,
+  AugustinaModal,
+  VanessaModal,
+  AbibaModal,
+  JudeModal,
+  NaaModal,
 } from "../../../assets";
 import { GoDotFill } from "react-icons/go";
 import { IoCloseCircle } from "react-icons/io5";
@@ -20,6 +27,7 @@ const OurPeople = () => {
     {
       name: "Kofi Owusu-Nhyira",
       image: Kofi,
+      modalImage: KofiModal,
       position: "Founding Partner",
       portfolio: "https://www.linkedin.com/in/kofiowusu-nhyira/",
       bio1: "Kofi Owusu-Nhyira is a highly skilled technology lawyer, problem solver, and fintech entrepreneur with over 16 years of professional experience and expertise in the promotion, support, and regulation of Technology Innovation and Digital Financial Services across Africa.",
@@ -36,6 +44,7 @@ const OurPeople = () => {
     {
       name: "Emmanuel Saah",
       image: Emmanuel,
+      modalImage: EmmanuelModal,
       position: "Managing Partner",
       portfolio: "https://www.linkedin.com/in/emmanuel-saah-4a451a222/",
       bio1: "Emmanuel Saah is the attorney in charge of corporate and commercial practice at EGL.",
@@ -59,6 +68,7 @@ const OurPeople = () => {
     {
       name: "Augustina Odame",
       image: Augustina,
+      modalImage: AugustinaModal,
       position: "Consultant",
       portfolio: "https://www.linkedin.com/in/augustinaodame/",
       bio1: "Dr. Augustina Odame is an economist (PhD) and consultant with broad experience and expertise in business set-up and regulatory compliance processes for technology firms across several African markets.",
@@ -80,6 +90,7 @@ const OurPeople = () => {
     {
       name: "Vanesa Akuetteh",
       image: Vanessa,
+      modalImage: VanessaModal,
       position: "Associate",
       portfolio: "https://www.linkedin.com/in/vanesa-akuetteh/",
       bio1: "Vanesa Akuetteh is an Associate at Eight Geeks at Law with over 5 years of experience in the legal space. She specializes in transactional law and works across the corporate and commercial, licensing and regulatory and Intellectual Property teams. ",
@@ -102,6 +113,7 @@ const OurPeople = () => {
     {
       name: "Abiba Tornia",
       image: Abiba,
+      modalImage: AbibaModal,
       position: "Associate",
       portfolio: "https://www.linkedin.com/in/abiba-tornia-a026a766/",
       bio1: "Abiba Tornia is an associate at Eight Geeks at Law. Her practice is mainly on regulatory and licensing with a focus on Telecommunication Law. She was the winner of best student in Jurisprudence and Evidence from the University of Buckingham and remains very passionate about electronic evidence and demystifying the admissibility of electronic evidence.",
@@ -123,6 +135,7 @@ const OurPeople = () => {
     {
       name: "Jude Serbeh Boateng",
       image: Jude,
+      modalImage: JudeModal,
       position: "Associate",
       portfolio: "https://www.linkedin.com/in/jude-serbeh-boateng-816033149/",
       bio1: "Jude Serbeh-Boateng is an Associate at Eight Geeks at Law. His focus areas are Regulatory  and  Licensing,  Mergers  and Acquisitions,  Corporate  Restructuring,  Corporate  Finance, Strategic Advisory and Compliance. Since joining Eight Geeks, Jude has played a vital role in helping Tech Companies develop new business models in alignment with existing domestic and international regulations.",
@@ -143,6 +156,7 @@ const OurPeople = () => {
     {
       name: "Princess Judith Allotey",
       image: Naa,
+      modalImage: NaaModal,
       position: "Associate",
       portfolio:
         "https://www.linkedin.com/in/princess-judith-n-a-allotey-0469a41a0/",
@@ -214,14 +228,12 @@ const OurPeople = () => {
                     {/*content*/}
                     <div className="bg-white border border-gray-200 shadow ">
                       <div className="bg-[#F9F9F9]">
-                        <div className="aspect-w-1 aspect-h-1">
-                          <img
-                            className="w-full h-[60rem] object-cover object-center mx-auto"
-                            src={data.image}
-                            alt=""
-                            style={{objectPosition: "0rem 30rem"}}
-                          />
-                        </div>
+                        <img
+                          className=" h-[60rem] pt-[33rem] object-cover  mx-auto"
+                          src={data.modalImage}
+                          alt=""
+                          // style={{ objectPosition: "0rem 20rem" }}
+                        />
                       </div>
                       <div className="p-5 lg:p-10">
                         <div>
@@ -229,7 +241,13 @@ const OurPeople = () => {
                             {data.name}
                           </h5>
                         </div>
-                        <p className="mb-8"> {data.position}</p>
+                        <p className="mb-8">
+                          {" "}
+                          {data.position}{" "}
+                          <a href={data.portfolio}>
+                            <FaLinkedin className="text-lg inline-flex text-[#0076B2]" />
+                          </a>
+                        </p>
 
                         {data.bio1 && (
                           <p className="mb-3 font-normal text-gray-700">
