@@ -6,11 +6,10 @@ import IntellectualProperty from "../pages/IntellectualProperty";
 import CorporateLaw from "../pages/CorporateLaw";
 import ReguLicensing from "../pages/ReguLicensing";
 import OurStory from "../pages/OurStory/OurStory";
-import NewsInsights from "../pages/newsInsightPage/NewsInsights";
 import Careers from "../pages/Careers";
 import Contact from "../pages/Contact";
 import ExternalLinks from "../pages/ExternalLinks";
-import InsightsNews from "../pages/newsInsightPage/InsightsNews";
+import InsightsNews from "../pages/InsightsNews";
 
 const AppRouter = () => {
   return (

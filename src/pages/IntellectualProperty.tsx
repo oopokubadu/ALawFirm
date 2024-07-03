@@ -1,5 +1,4 @@
 import React from "react";
-import {BgQuoteBlack, IntellectualBgImage } from "../assets";
 import { CgQuote } from "react-icons/cg";
 import FocusAreas from "./Home/components/FocusAreas";
 import { ContactUsModal } from "../components/ContactUsModal";
@@ -10,7 +9,7 @@ const IntellectualProperty = () => {
       <div
         className="h-[80vh]"
         style={{
-          backgroundImage: `url(${IntellectualBgImage})`,
+          backgroundImage: `url(https://res.cloudinary.com/djmddrfv2/image/upload/v1720012616/bg_img_intellectual_property_rlpiul.webp)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

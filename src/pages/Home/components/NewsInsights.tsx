@@ -1,32 +1,37 @@
 import React from "react";
 import { CgArrowRightO } from "react-icons/cg";
 import { Link } from "react-router-dom";
-import { News2, News4, News5, News7, News8, News9 } from "../../../assets";
 
 const NewsInsights = () => {
   const newsData = [
     {
-      image: News8,
+      image:
+        "https://res.cloudinary.com/djmddrfv2/image/upload/v1720009218/img_news8_i6qdxk.webp",
       link: "/news/details-5",
     },
     {
-      image: News2,
+      image:
+        "https://res.cloudinary.com/djmddrfv2/image/upload/v1720009215/img_news2_cyok1q.png",
       link: "/news/details-2",
     },
     {
-      image: News4,
+      image:
+        "https://res.cloudinary.com/djmddrfv2/image/upload/v1720009215/img_news4_zub1zs.png",
       link: "/news/details-3",
     },
     {
-      image: News7,
+      image:
+        "https://res.cloudinary.com/djmddrfv2/image/upload/v1720009223/img_news7_zszgkx.webp",
       link: "/news/details-4",
     },
     {
-      image: News5,
+      image:
+        "https://res.cloudinary.com/djmddrfv2/image/upload/v1720009215/img_news5_e6nsyl.png",
       link: "/news/details-1",
     },
     {
-      image: News9,
+      image:
+        "https://res.cloudinary.com/djmddrfv2/image/upload/v1720009220/img_news9_z1g80l.png",
       link: "/news/details-6",
     },
   ];

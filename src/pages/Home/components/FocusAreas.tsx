@@ -1,79 +1,63 @@
 import React from "react";
-import {
-  AI,
-  Agric,
-  Aviation,
-  Biotechnology,
-  Blockchain,
-  CommNet,
-  ConsElect,
-  DataStorage,
-  DigitalHealth,
-  DigitalMedia,
-  EGaming,
-  Internet,
-  Regulations,
-  Software,
-} from "../../../assets";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const FocusAreas = () => {
   const specialistData = [
     {
-      icon: Regulations,
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720003255/regulatory-Licensing_dkteta.png",
       title: "Financial Services & Financial Technology",
     },
     {
-      icon: Blockchain,
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010839/Blockchain_sedjnu.png",
       title: "Blockchain & Cryptocurrency",
     },
     {
-      icon: DataStorage,
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010846/DataStorage-CloudComp_jmzx6p.png",
       title: "Data Storage & Cloud Computing",
     },
     {
-      icon: ConsElect,
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010843/ConsumerElectronics_lqztwx.png",
       title: "Consumer Electronics",
     },
     {
-      icon: CommNet,
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010841/ComNetwork_oywpfr.png",
       title: "Communications & Networking",
     },
     {
-      icon: DigitalMedia,
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010851/DigiMedia_pbof7s.png",
       title: "Digital Media & Entertainment",
     },
     {
-      icon: Internet,
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010860/Internet_hq1o6r.png",
       title: "Internet",
     },
     {
-      icon: Software,
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010981/Software_z7xkrx.png",
       title: "Software",
     },
     {
-      icon: Biotechnology,
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010836/Biotechnology_rdytiv.png",
       title: "Biotechnology",
     },
     {
-      icon: Aviation,
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010835/Aviation_drb3si.png",
       title: "Aviation",
     },
     {
-      icon: EGaming,
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010855/Gaming_o0inw3.png",
       title: "Electronic Gaming",
     },
     {
-      icon: DigitalHealth,
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010848/DigiHealth_ofhhjb.png",
       title: "Digital Health",
     },
     {
-      icon: Agric,
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010831/AgricTech_omzmme.png",
       title: "Agricultural Technology",
     },
     {
-      icon: AI,
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010832/AI_c9fygs.png",
       title: "Artificial Intelligence",
     },
   ];

@@ -1,5 +1,4 @@
 import React from "react";
-import { Blog, Library } from "../../assets";
 import { CgArrowRightO } from "react-icons/cg";
 import { Link } from "react-router-dom";
 
@@ -32,7 +31,11 @@ const InsightsNews = () => {
                 data-aos-delay="200"
                 className="bg-white hover:bg-[#F0F0F0] border-4 border-transparent  hover:border-[#DFDFDF] transition ease-in-out duration-200 p-6"
               >
-                <img src={Blog} alt="" className="w-12 h-12" />
+                <img
+                  src="https://res.cloudinary.com/djmddrfv2/image/upload/v1720003255/regulatory-Licensing_dkteta.png"
+                  alt=""
+                  className="w-12 h-12"
+                />
                 <h6 className="my-5 text-lg  font-medium  text-[#262626]">
                   Blog
                 </h6>
@@ -58,7 +61,7 @@ const InsightsNews = () => {
                 data-aos-delay="400"
                 className="bg-white hover:bg-[#F0F0F0] border-4 border-transparent  hover:border-[#DFDFDF] transition ease-in-out duration-200 p-6"
               >
-                <img src={Library} alt="" className="w-12 h-12" />
+                <img src="https://res.cloudinary.com/djmddrfv2/image/upload/v1720012356/library_p677xq.png" alt="" className="w-8 h-12" />
                 <h6 className="my-5 text-lg  font-medium  text-[#262626]">
                   Library
                 </h6>

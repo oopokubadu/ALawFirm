@@ -1,5 +1,4 @@
 import React from "react";
-import { HeroVid2, MobileStoryImg } from "../../assets";
 import OurPeople from "./components/OurPeople";
 import WhoWeAre from "./components/WhoWeAre";
 
@@ -9,21 +8,14 @@ const OurStory = () => {
       <div className="h-[80vh] relative">
         <video
           className="w-full h-[80vh] top-0 left-0 pointer-events-none absolute object-cover"
-          src={HeroVid2}
+          src="https://res.cloudinary.com/djmddrfv2/video/upload/v1720002345/video_hero2_hrzhto.webm"
           muted
           loop
           autoPlay
           playsInline
           controls={false}
         />
-        {/* <div
-          style={{
-            backgroundImage: `url(${MobileStoryImg})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-          className="absolute bottom-0 left-0 right-0 top-0 h-[80vh] w-full overflow-hidden bg-black bg-fixed lg:hidden "
-        ></div> */}
+    
 
         <div className="max-w-[85rem] mx-auto px-4 lg:px-6 flex h-[70vh] items-end">
           <div>

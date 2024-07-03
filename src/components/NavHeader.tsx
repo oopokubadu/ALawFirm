@@ -2,7 +2,6 @@ import React, { Fragment, useEffect, useState } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { NavLink, useLocation } from "react-router-dom";
-import { LogoWhite } from "../assets";
 import SpecialistDropdown from "./SpecialistDropdown";
 import NewsInsightsDropdown from "./NewsInsightsDropdown";
 
@@ -68,7 +67,7 @@ const NavHeader = () => {
           <a href="/">
             {/* Logo */}
             <div>
-              <img className="w-20" src={LogoWhite} alt="" />
+              <img className="w-20" src="https://res.cloudinary.com/djmddrfv2/image/upload/v1720001958/8geeks_uvik80.png" alt="" />
             </div>
           </a>
           <div className="flex-1"></div>

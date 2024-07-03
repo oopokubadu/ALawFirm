@@ -1,5 +1,4 @@
 import React from "react";
-import { CorporateLawBgImage } from "../assets";
 import { CgQuote } from "react-icons/cg";
 import FocusAreas from "./Home/components/FocusAreas";
 import { ContactUsModal } from "../components/ContactUsModal";
@@ -10,7 +9,7 @@ const CorporateLaw = () => {
       <div
         className="h-[80vh] relative"
         style={{
-          backgroundImage: `url(${CorporateLawBgImage})`,
+          backgroundImage: `url(https://res.cloudinary.com/djmddrfv2/image/upload/v1720012612/bg_img_corporate_law_z25x37.webp)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

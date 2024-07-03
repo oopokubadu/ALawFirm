@@ -1,7 +1,4 @@
 import React from "react";
-import { LogoBlack } from "../assets";
-import { Link } from "react-router-dom";
-
 const Footer = () => {
   return (
     <footer className="px-4 py-10 bg-white">
@@ -10,7 +7,11 @@ const Footer = () => {
           <a href="/">
             {/* Logo */}
             <div className="h-7 my-4 text-heading">
-              <img className="w-20 " src={LogoBlack} alt="" />
+              <img
+                className="w-20 "
+                src="https://res.cloudinary.com/djmddrfv2/image/upload/v1720001958/logoBlack_qntrup.png"
+                alt=""
+              />
             </div>
           </a>
           <div>

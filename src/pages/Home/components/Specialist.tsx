@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import { Corporate, Intellectual, Regulations } from "../../../assets";
 import { CgArrowRightO } from "react-icons/cg";
 import { Link, useLocation } from "react-router-dom";
 
@@ -19,21 +18,21 @@ const Specialist = () => {
   const specialistData = [
     {
       link: "/corporate-and-commercial",
-      icon: Corporate,
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720003255/corporate-commercial_ygcaru.png",
       title: "Corporate and Commercial",
       description:
         " Our Corporate and Commercial practice covers a wide range of commercial activities. The team provides legal support to clients on all aspects of their equity and debt capital market transactions, shareholder activism, corporate governance, emerging company structuring and technology-related contract review.",
     },
     {
       link: "/regulatory-and-licensing",
-      icon: Regulations,
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720003255/regulatory-Licensing_dkteta.png",
       title: "Regulatory and Licensing",
       description:
         "Our Regulatory and Licensing team ensures that you fulfil all applicable regulatory obligations with targeted guidance so you can focus on your core business. Our licensing support services has involved interfacing with regulatory bodies to represent our clients’ best interests while also ensuring their compliance with applicable law.",
     },
     {
       link: "/intellectual-property-&-technology-transactions",
-      icon: Intellectual,
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720003255/intellectual-property_ekm2uy.png",
       title: "Intellectual Property & Technology Transactions",
       description:
         " Our Intellectual Property practice offers strategic counsel to clients concerning all aspects of intellectual property rights including trademarks and passing off, patents, confidential information, copyright, designs and database rights and related regulatory issues.",

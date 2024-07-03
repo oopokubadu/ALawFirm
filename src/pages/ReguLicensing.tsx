@@ -1,5 +1,4 @@
 import React from "react";
-import { BgQuote, ReguLicenseBgImage } from "../assets";
 import { CgQuote } from "react-icons/cg";
 import FocusAreas from "./Home/components/FocusAreas";
 import { ContactUsModal } from "../components/ContactUsModal";
@@ -10,7 +9,7 @@ const ReguLicensing = () => {
       <div
         className="h-[80vh]"
         style={{
-          backgroundImage: `url(${ReguLicenseBgImage})`,
+          backgroundImage: `url(https://res.cloudinary.com/djmddrfv2/image/upload/v1720012620/bg_img_regulations_and_licensing_knvuor.webp)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -72,7 +71,9 @@ const ReguLicensing = () => {
                 its ability to protect and uphold the rights and dignity of
                 every individual in society.
               </h2>
-              <p className="mt-4 font-bold text-sm group-hover:text-white">-Ruth Bader Ginsburg</p>
+              <p className="mt-4 font-bold text-sm group-hover:text-white">
+                -Ruth Bader Ginsburg
+              </p>
             </div>
             <div
               data-aos="fade-left"

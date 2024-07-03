@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { SafeImg } from "../assets";
 import { useSendEmailMutation } from "../services/email-service";
 import toast from "react-hot-toast";
 

@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { HeroVid1, HeroVid2, HeroVid3, MobileHeroBg } from "../../../assets";
 
-const videos = [HeroVid1, HeroVid2, HeroVid3];
+const videos = [
+  "https://res.cloudinary.com/djmddrfv2/video/upload/v1720002325/video_hero1_sm8wcm.webm",
+  "https://res.cloudinary.com/djmddrfv2/video/upload/v1720002345/video_hero2_hrzhto.webm",
+  "https://res.cloudinary.com/djmddrfv2/video/upload/v1720002325/video_hero3_d46spp.webm",
+];
 
 const BgRandomVideo: React.FC = () => {
-  const [videoUrl, setVideoUrl] = useState(HeroVid1);
+  const [videoUrl, setVideoUrl] = useState("https://res.cloudinary.com/djmddrfv2/video/upload/v1720002325/video_hero1_sm8wcm.webm");
 
   useEffect(() => {
     const lastVideoIndex = localStorage.getItem("lastVideoIndex");
@@ -28,14 +31,6 @@ const BgRandomVideo: React.FC = () => {
         playsInline
         controls={false}
       />
-      {/* <div
-        style={{
-          backgroundImage: `url(${MobileHeroBg})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        className="absolute bottom-0 left-0 right-0 top-0 h-[100vh] w-full overflow-hidden bg-black bg-fixed lg:hidden"
-      ></div> */}
     </div>
   );
 };

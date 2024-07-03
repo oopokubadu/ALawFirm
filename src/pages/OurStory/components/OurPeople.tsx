@@ -1,23 +1,7 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
-import {
-  Abiba,
-  Augustina,
-  Emmanuel,
-  Kofi,
-  Jude,
-  Vanessa,
-  Naa,
-  KofiModal,
-  EmmanuelModal,
-  AugustinaModal,
-  VanessaModal,
-  AbibaModal,
-  JudeModal,
-  NaaModal,
-} from "../../../assets";
 import { GoDotFill } from "react-icons/go";
-import { IoCloseCircle, IoCloseCircleOutline } from "react-icons/io5";
+import {  IoCloseCircleOutline } from "react-icons/io5";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 
 const OurPeople = () => {
@@ -27,9 +11,9 @@ const OurPeople = () => {
   const BoardMembers = [
     {
       name: "Kofi Owusu-Nhyira",
-      image: Kofi,
+      image: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011723/Kofi-Owusu-Nhyira_xc6jz4.webp",
       email: "mailto:info@theeightgeeks.com",
-      modalImage: KofiModal,
+      modalImage: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011713/img_modal_header_kofi_glgvgf.png",
       position: "Founding Partner",
       portfolio: "https://www.linkedin.com/in/kofiowusu-nhyira/",
       bio1: "Kofi Owusu-Nhyira is a highly skilled technology lawyer, problem solver, and fintech entrepreneur with over 16 years of professional experience and expertise in the promotion, support, and regulation of Technology Innovation and Digital Financial Services across Africa.",
@@ -45,8 +29,8 @@ const OurPeople = () => {
     },
     {
       name: "Emmanuel Saah",
-      image: Emmanuel,
-      modalImage: EmmanuelModal,
+      image: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011700/Esaah_bfmsvh.webp",
+      modalImage: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011707/img_modal_header_emmanuel_saah_na4ngf.png",
       email: "mailto:e.saah@theeightgeeks.com",
       position: "Managing Partner",
       portfolio: "https://www.linkedin.com/in/emmanuel-saah-4a451a222/",
@@ -70,8 +54,8 @@ const OurPeople = () => {
     },
     {
       name: "Augustina Odame",
-      image: Augustina,
-      modalImage: AugustinaModal,
+      image: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011699/Augustina-Odame_ny62o8.webp",
+      modalImage: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011704/img_modal_header_augustina_agrpgj.png",
       email: "mailto:a.odame@theeightgeeks.com",
       position: "Consultant",
       portfolio: "https://www.linkedin.com/in/augustinaodame/",
@@ -93,8 +77,8 @@ const OurPeople = () => {
 
     {
       name: "Vanesa Akuetteh",
-      image: Vanessa,
-      modalImage: VanessaModal,
+      image: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011729/Vanesa-Akuetteh_h2ufnr.webp",
+      modalImage: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011718/img_modal_header_vanessa_gcnyza.png",
       email: "mailto:v.akuetteh@theeightgeeks.com",
       position: "Associate",
       portfolio: "https://www.linkedin.com/in/vanesa-akuetteh/",
@@ -117,8 +101,8 @@ const OurPeople = () => {
 
     {
       name: "Abiba Tornia",
-      image: Abiba,
-      modalImage: AbibaModal,
+      image: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011698/Abiba-Tornia_atbneu.webp",
+      modalImage: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011703/img_modal_header_abiba_rlgglx.png",
       email: "mailto:a.tornia@theeightgeeks.com",
       position: "Associate",
       portfolio: "https://www.linkedin.com/in/abiba-tornia-a026a766/",
@@ -140,8 +124,8 @@ const OurPeople = () => {
     },
     {
       name: "Jude Serbeh Boateng",
-      image: Jude,
-      modalImage: JudeModal,
+      image: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011721/Jude_gqersb.webp",
+      modalImage: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011710/img_modal_header_jude_borsgx.png",
       email: "mailto:j.serbehboateng@theeightgeeks.com",
       position: "Associate",
       portfolio: "https://www.linkedin.com/in/jude-serbeh-boateng-816033149/",
@@ -162,8 +146,8 @@ const OurPeople = () => {
     },
     {
       name: "Princess Judith Allotey",
-      image: Naa,
-      modalImage: NaaModal,
+      image: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011727/Naa_qhjnv4.webp",
+      modalImage: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011715/img_modal_header_Naa_kiyc8f.png",
       position: "Associate",
       email: "mailto:p.allotey@theeightgeeks.com",
       portfolio:
