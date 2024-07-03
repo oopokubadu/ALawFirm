@@ -10,11 +10,11 @@ const OurStory = () => {
         <video
           className="w-full h-[80vh] top-0 left-0 pointer-events-none absolute object-cover"
           src={HeroVid2}
-          muted={true}
-          loop={true}
-          autoPlay={true}
-          controls={false}
+          muted
+          loop
+          autoPlay
           playsInline
+          controls={false}
         />
         {/* <div
           style={{
