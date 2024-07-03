@@ -1,7 +1,7 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
-import {  IoCloseCircleOutline } from "react-icons/io5";
+import { IoCloseCircleOutline } from "react-icons/io5";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 
 const OurPeople = () => {
@@ -11,156 +11,103 @@ const OurPeople = () => {
   const BoardMembers = [
     {
       name: "Kofi Owusu-Nhyira",
-      image: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011723/Kofi-Owusu-Nhyira_xc6jz4.webp",
+      image:
+        "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011723/Kofi-Owusu-Nhyira_xc6jz4.webp",
       email: "mailto:info@theeightgeeks.com",
-      modalImage: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011713/img_modal_header_kofi_glgvgf.png",
+      modalImage:
+        "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011713/img_modal_header_kofi_glgvgf.png",
       position: "Founding Partner",
       portfolio: "https://www.linkedin.com/in/kofiowusu-nhyira/",
       bio1: "Kofi Owusu-Nhyira is a highly skilled technology lawyer, problem solver, and fintech entrepreneur with over 16 years of professional experience and expertise in the promotion, support, and regulation of Technology Innovation and Digital Financial Services across Africa.",
       bio2: "Prior to his role at Eight Geeks, he had affiliations with AB & David and Roman Levi Associates. Kofi is a barrister and solicitor of the Supreme Court of Ghana.",
-      experience1:
-        "Through the Chamber of Technology (Ghana), as both a founding and governing council member, made significant contributions to, amongst other things, the Ghanaian payment systems regulatory regime as defined by the Payment Systems and Services Act, 2019 (ACT 987) through continued stakeholder engagement and advocacy",
-      experience2:
-        "Provided advisory services, as a member of Bank of Ghana’s Payment Systems Advisory Committee, for the regulation and oversight of payment systems, including operations and technical standards, and related matters affecting payment services.",
-      experience3:
-        "Consulted for the United Nations Capital Development Fund (UNCDF) as a National Expert in Policy and Legal Compliance, to provide assistance to select companies for expansion into the Ghanaian market and for achieving regulatory compliance objectives.",
-      experience4:
-        "Provided support to clients for company set-up or restructuring, towards obtaining licences within the Ghanaian technology industry.",
     },
     {
       name: "Emmanuel Saah",
-      image: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011700/Esaah_bfmsvh.webp",
-      modalImage: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011707/img_modal_header_emmanuel_saah_na4ngf.png",
+      image:
+        "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011700/Esaah_bfmsvh.webp",
+      modalImage:
+        "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011707/img_modal_header_emmanuel_saah_na4ngf.png",
       email: "mailto:e.saah@theeightgeeks.com",
       position: "Managing Partner",
       portfolio: "https://www.linkedin.com/in/emmanuel-saah-4a451a222/",
-      bio1: "Emmanuel Saah is the attorney in charge of corporate and commercial practice at EGL.",
-      bio2: "In that capacity, he has provided legal and commercial support to several technology companies both in the debt and equity capital markets and also in the banking, and the securities markets. Emmanuel is a dual qualified attorney, called to the bar both in Ghana and New York",
-      bio3: "",
-      experience1:
-        "Acted as legal advisor for a Dubai based investor on its acquisition of shares in MTN South Sudan",
-      experience2:
-        "Acted as counsel for Ghanaian venture capital fund on its investment in a Nigerian identity verification platform.",
-      experience3:
-        "Undertook a corporate reorganisation for a cross border digital payment platform with a valuation of over USD 1 billion.",
-      experience4:
-        "Assisted an American based investment firm on its convertible note investment in a Ghanaian company specialized in greenhouse farming.",
-      experience5:
-        "Undertook legal due diligence on behalf of a Nigerian digital platform on its proposed acquisition of a value-added service provider in Ghana.",
-      experience6:
-        "Advised a digital credit management company on the legal regime governing debt buying in Ghana.",
-      experience7:
-        "Advised a cross border payment platform on foreign exchange trading in Ghana.",
+      bio1: "Emmanuel is the Managing Partner and Head of the Corporate and Commercial practice group. Emmanuel has provided legal and commercial support to several companies in the debt and equity capital markets, banking, securities markets, restructuring and financial technology transactions.",
+      bio2: "Emmanuel has acted for several local and international clients including Citi Bank, Ghana Amalgamated Trust Plc, Uber Inc., Scancom Plc, African Export-Import Bank, Ministry of Finance, Village Capital Llc, Flutterwave, Wave Mobile Money, the United Nations Capital Development Fund and the United Nations Development Programme.",
+      bio3: "He has an LLB from the University of Exeter and an LLM from University College London. Emmanuel is a dual qualified attorney, called to the bar both in Ghana and New York",
     },
     {
       name: "Augustina Odame",
-      image: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011699/Augustina-Odame_ny62o8.webp",
-      modalImage: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011704/img_modal_header_augustina_agrpgj.png",
+      image:
+        "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011699/Augustina-Odame_ny62o8.webp",
+      modalImage:
+        "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011704/img_modal_header_augustina_agrpgj.png",
       email: "mailto:a.odame@theeightgeeks.com",
       position: "Consultant",
       portfolio: "https://www.linkedin.com/in/augustinaodame/",
       bio1: "Dr. Augustina Odame is an economist (PhD) and consultant with broad experience and expertise in business set-up and regulatory compliance processes for technology firms across several African markets.",
       bio2: "As senior consultant at Eight Geeks at Law, Augustina spearheads compliance support for technology companies looking to innovate and expand successfully into Ghana and other African markets",
-      experience1:
-        "Oversaw the initial set-up and licensing efforts of over a dozen financial technology companies in key African markets.",
-      experience2:
-        "Provided crucial local insights and contextualisation for multinational and Global technology firms with technology applications from digital transport to blockchain in their market entry and business expansion efforts in Ghana.",
-      experience3:
-        "Developed tailor-made compliance programs for technology clients.",
-      experience4:
-        "Provided regulatory support for two digital payment platforms with a valuation of USD 1 billion",
-      experience5:
-        "Advised clients on changes to regulatory regimes and provided support for updates to internal compliance programs to maintain compliance.",
-      experience6:
-        "Provided advisory support services to the central banks of a number of African countries in the development, establishment, and management of fit-for-purpose regulatory regimes for financial technology companies.",
     },
 
     {
       name: "Vanesa Akuetteh",
-      image: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011729/Vanesa-Akuetteh_h2ufnr.webp",
-      modalImage: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011718/img_modal_header_vanessa_gcnyza.png",
+      image:
+        "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011729/Vanesa-Akuetteh_h2ufnr.webp",
+      modalImage:
+        "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011718/img_modal_header_vanessa_gcnyza.png",
       email: "mailto:v.akuetteh@theeightgeeks.com",
       position: "Associate",
       portfolio: "https://www.linkedin.com/in/vanesa-akuetteh/",
-      bio1: "Vanesa Akuetteh is an Associate at Eight Geeks at Law with over 5 years of experience in the legal space. She specializes in transactional law and works across the corporate and commercial, licensing and regulatory and Intellectual Property teams. ",
-      bio2: "Vanesa is the principal of the Artificial Intelligence Desk at Eight Geeks and is certified in document automation and generative artificial intelligence. She holds a master’s degree in Law, Business, and Management from the University of Law (London Moorgate) and is a graduate of the University of London and the University of Ghana.",
-      bio3: "She is Trained as a solicitor of England and Wales and called as a Barrister and Solicitor of the Supreme Court of Ghana.",
-      experience1:
-        "Advised a pan -African technology incubator on the strategic incorporation of local subsidiaries for its portfolio companies and provided foundational legal support, including drafting contracts like founders' agreements and legal clinics to discuss preliminary legal issues.",
-      experience2:
-        "Acted as counsel for Ghanaian venture capital fund on its investment in a Nigerian identity verification platform.",
-      experience3:
-        "Advised a continental identity verification solutions provider on the private liquidation of its local subsidiary.",
-      experience4:
-        "Advised a continental identity verification solutions provider on the refinement and restructuring of its suite of corporate and commercial agreements including its terms and conditions, data processing agreements, privacy policy and reseller agreements.",
-      experience5:
-        "Provided transaction advisory on the acquisition of an enhanced payment service provider in Ghana.",
-      experience6:
-        "Brokered a strategic partnership between an auto loan rental company and a finance house to facilitate the provision of loans and provided comprehensive legal support throughout the transaction.",
+      bio1: "Vanesa Akuetteh is an Associate at Eight Geeks at Law with over 5 years of experience in the legal sector. She specializes in transactional law and works across the Corporate & Commercial, Licensing & Regulatory and Intellectual Property teams.",
+      bio2: "Vanesa has worked with an array of local and international clients, including Uber, Smile Identity, Autochek, Flutterwave, Hubtel, Nsano, Meltwater Entrepreneurial School of Technology, PayFuture, and Kwarleyz Group. ",
+      bio3: "In addition to her advisory work, she heads the Artificial Intelligence Desk at Eight Geeks and is certified in document automation and generative AI.",
+      bio4: "Vanesa holds a Master's degree in Law, Business, and Management from the University of Law (London Moorgate). She simultaneously pursued and completed an LLB from the University of London and a BA in Political Science and Chinese from the University of Ghana.",
+      bio5: "She is trained as a Solicitor of England and Wales and is called to the Bar as a Barrister and Solicitor of the Supreme Court of Ghana.",
     },
 
     {
       name: "Abiba Tornia",
-      image: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011698/Abiba-Tornia_atbneu.webp",
-      modalImage: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011703/img_modal_header_abiba_rlgglx.png",
+      image:
+        "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011698/Abiba-Tornia_atbneu.webp",
+      modalImage:
+        "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011703/img_modal_header_abiba_rlgglx.png",
       email: "mailto:a.tornia@theeightgeeks.com",
       position: "Associate",
       portfolio: "https://www.linkedin.com/in/abiba-tornia-a026a766/",
-      bio1: "Abiba Tornia is an associate at Eight Geeks at Law. Her practice is mainly on regulatory and licensing with a focus on Telecommunication Law. She was the winner of best student in Jurisprudence and Evidence from the University of Buckingham and remains very passionate about electronic evidence and demystifying the admissibility of electronic evidence.",
-      bio2: "Abiba is called to the Bar as a Barrister and Solicitor of the Supreme Court of Nigeria and Ghana. Prior to joining the firm, she worked as a pupil at Ampofo, Oppong and Associates.",
-      bio3: "Abiba is the principal of the internet of things desk at Eight Geeks at Law",
-      experience1:
-        "Acted as legal counsel to US based company in the restructuring of its Ghanaian subsidiary to facilitate a crowdfunding partnership in Ghana.",
-      experience2:
-        "Represented a multinational payment processor in its dispute resolution cases and license compliance.",
-      experience3:
-        "Acted as legal advisor for Egyptian payment processor on its application for an enhanced payment service provider license",
-      experience4:
-        "Acted as legal advisor for asset lending company on its application for a Finance House license from the Bank of Ghana.",
-      experience5:
-        "Acted as legal advisor for multinational payment service provider on its Ghana Investment Promotion Center (GIPC) license and renewal.",
-      experience6:
-        "Acted as legal advisor for US based company seeking a payment and financial technology service license from the Bank of Ghana.",
+      bio1: "Abiba Tornia is an Associate at Eight Geeks at Law and a multi-jurisdictional lawyer.",
+      bio2: "Her client list includes notable companies such as Paystack, FiClub, Masria Digital Payments, Village Capital LLC, Vivandi Group, Oze Ghana Ltd, and Cellulant Ghana Ltd.",
+      bio3: "She also leads the Internet of Things (IoT) desk at Eight Geeks at Law.",
+      bio4: "Abiba is currently an associate on the regulatory and licensing team at Eight Geeks at Law and contributed to the commercial team at Michael Ronan and Associates(UK) in the past. ",
+      bio5: "She was called to the Ghana Bar in 2022 and the Nigerian Bar in 2021. She holds an MBA from NYU and both an LLB and LLM from the University of Buckingham.",
     },
     {
       name: "Jude Serbeh Boateng",
-      image: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011721/Jude_gqersb.webp",
-      modalImage: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011710/img_modal_header_jude_borsgx.png",
+      image:
+        "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011721/Jude_gqersb.webp",
+      modalImage:
+        "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011710/img_modal_header_jude_borsgx.png",
       email: "mailto:j.serbehboateng@theeightgeeks.com",
       position: "Associate",
       portfolio: "https://www.linkedin.com/in/jude-serbeh-boateng-816033149/",
-      bio1: "Jude Serbeh-Boateng is an Associate at Eight Geeks at Law. His focus areas are Regulatory  and  Licensing,  Mergers  and Acquisitions,  Corporate  Restructuring,  Corporate  Finance, Strategic Advisory and Compliance. Since joining Eight Geeks, Jude has played a vital role in helping Tech Companies develop new business models in alignment with existing domestic and international regulations.",
-      bio2: "He is also the principal for the Blockchain and Cryptocurrency desk at the firm.",
-      experience1:
-        "Advised an American based money transfer operator (MTO) on aligning its Ghanaian operations with the inward remittance regulations for cross-border payments",
-      experience2:
-        "Ghanaian counsel for the restructuring of a Ghanaian-based payment service provider to ensure compliance with local equity participation under Ghanaian law",
-      experience3:
-        "Advised an American based crypto exchange on launching a potential product model in Ghana",
-      experience4:
-        "Advised a foreign-based company on their acquisition of a Ghanaian technology company",
-      experience5:
-        "Advised a leading e-hailing company on various aspects of its operations in Ghana",
-      experience6:
-        "Advised an African-based Unicorn on their strategic partnerships in Ghana",
+      bio1: "Jude Serbeh-Boateng is an Associate at Eight Geeks at Law, specialising in Regulatory and Licensing, Mergers and Acquisitions, Corporate Restructuring, Corporate Finance, Strategic Advisory, and Compliance.",
+      bio2: "His recent work with the firm includes assisting clients like Remitly, an American-based international money transfer operator, CoinCola, a Singaporean cryptocurrency company, Stellar Development Foundation, an American blockchain company and Flutterwave, an African-based unicorn in the payment space.",
+      bio3: "Jude holds a B.A. in English and Political Science from the University of Ghana. He obtained his LLB from the University of Ghana, Legon, and a professional certificate from the Ghana School of Law. He is admitted to practice law in Ghana.",
+    
     },
     {
       name: "Princess Judith Allotey",
-      image: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011727/Naa_qhjnv4.webp",
-      modalImage: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011715/img_modal_header_Naa_kiyc8f.png",
+      image:
+        "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011727/Naa_qhjnv4.webp",
+      modalImage:
+        "https://res.cloudinary.com/djmddrfv2/image/upload/v1720011715/img_modal_header_Naa_kiyc8f.png",
       position: "Associate",
       email: "mailto:p.allotey@theeightgeeks.com",
       portfolio:
         "https://www.linkedin.com/in/princess-judith-n-a-allotey-0469a41a0/",
-      bio1: "Princess Allotey is an associate at Eight Geeks at Law with interests in various areas and fields of law. Her work at Eight Geeks spans corporate and commercial issues including mergers and acquisitions, corporate restructuring and advisory, regulatory and licensing and intellectual property protection. She also has interest in digital health, artificial intelligence and blockchain technology.",
-      bio2: "She graduated with first class honours from the University of Ghana. ",
-      bio3: "Princess is the principal of the digital health desk of Eight Geeks at Law.",
-      experience1:
-        "Assisted in provision of general advisory services for an e-hailing company",
-      experience2:
-        "Assisted in provision of advisory services for a Singapore based crypto exchange ",
-      experience3:
-        "Assisted in the provision of transaction advisory services for a continental identity verification solutions provider ",
+      bio1: "Princess Allotey is an Associate at Eight Geeks at Law. ",
+      bio2: "Her work at the firm spans various areas including corporate restructuring, mergers and acquisitions, and licensing and regulatory compliance. ",
+      bio3: "She has assisted on several matters including providing advisory services for Uber, an e-hailing company, CoinCola, a Singapore-based cryptocurrency company and Smile Identity, a continental identity verification and e-KYC (Know Your Customer) company.",
+      bio4: "She has an LLB (First class Honours) from the University of Ghana and a Qualifying Law Certificate from the Ghana School of Law.",
+      bio5: "She has been admitted to practice law in Ghana and is a member of the Ghana Bar Association.",
+  
     },
   ];
 
@@ -223,14 +170,14 @@ const OurPeople = () => {
                     </div>
                     {/*content*/}
                     <div className="bg-white border border-gray-200 shadow relative  max-h-[90vh] overflow-y-auto">
-                      <div className="bg-[#F9F9F9]">
+                      {/* <div className="bg-[#F9F9F9]">
                         <img
                           className="w-full lg:h-[25rem] object-cover object-center mx-auto"
                           src={data.modalImage}
                           alt=""
                           // style={{ objectPosition: "0rem 20rem" }}
                         />
-                      </div>
+                      </div> */}
                       <div className="p-5 lg:p-10">
                         <div className="mb-8 flex justify-between items-center flex-wrap sm:flex-nowrap">
                           <div>
@@ -272,14 +219,24 @@ const OurPeople = () => {
                             {data.bio3}
                           </p>
                         )}
+                        {data.bio4 && (
+                          <p className="mb-3 font-normal text-gray-700">
+                            {data.bio4}
+                          </p>
+                        )}
+                        {data.bio5 && (
+                          <p className="mb-3 font-normal text-gray-700">
+                            {data.bio5}
+                          </p>
+                        )}
                       </div>
-                      <div className="px-10 pb-6">
+                      {/* <div className="px-10 pb-6">
                         <p className="bg-[#ED1B24] ml-auto w-48 text-center text-white p-3">
                           Selected Experience
                         </p>
                         <hr className="border-hr border-2 border-[#ED1B24]" />
-                      </div>
-                      <div className="w-full px-10 mb-16 divide-y divide-layer-2 divide-opacity-20 divide-black">
+                      </div> */}
+                      {/* <div className="w-full px-10 mb-16 divide-y divide-layer-2 divide-opacity-20 divide-black">
                         {data.experience1 && (
                           <div className="py-4 flex justify-between space-x-4 ">
                             <GoDotFill className=" text-xs text-black" />
@@ -322,7 +279,7 @@ const OurPeople = () => {
                             <span className="flex-1">{data.experience7}</span>
                           </div>
                         )}
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
