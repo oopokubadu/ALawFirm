@@ -28,18 +28,21 @@ const Contact = () => {
 
     const form = new FormData();
     form.append("sender_name", formData.sender_name);
-    form.append("message", `Email: ${formData.email} <br/><br/> ${formData.message}`);
-    form.append("subject", formData.subject);
+    form.append(
+      "message",
+      `Email: ${formData.email} <br/><br/> ${formData.message}`
+    );
+    form.append("subject", `${formData.subject} - ${formData.sender_name}`);
     form.append("recipients", formData.recipients);
     form.append("domain", formData.domain);
     form.append("def_signature", formData.def_signature);
 
     const confirmationForm = new FormData();
-    confirmationForm.append("sender_name", "noreply@theeightgeeks.com");
-    confirmationForm.append("subject", "Email Sent");
+    confirmationForm.append("sender_name", "info@theeightgeeks.com");
+    confirmationForm.append("subject", `Email Sent - ${formData.sender_name}`);
     confirmationForm.append(
       "message",
-      "We have received your email, we will reach out to you soon."
+      "We have received your email, we will reach out to you momentarily."
     );
     confirmationForm.append("recipients", formData.email);
     confirmationForm.append("domain", formData.domain);
@@ -149,7 +152,7 @@ const Contact = () => {
                         !formData.email ||
                         !formData.message
                       }
-                      className="w-full h-12 px-6 text-indigo-100 transition-colors duration-150 bg-[#ED1B24] rounded-lg focus:shadow-outline hover:bg-[#ed1b26c7]"
+                      className="w-full h-12 px-6 text-indigo-100 transition-colors duration-150 bg-[#ED1B24] focus:shadow-outline hover:bg-[#ed1b26c7]"
                     >
                       Submit
                     </button>

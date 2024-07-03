@@ -1,6 +1,6 @@
 //Logo
 export { default as LogoWhite } from "./logo/8geeks.png";
-export { default as LogoBlack } from "./logo/logoBlack.svg";
+export { default as LogoBlack } from "./logo/logoBlack.png";
 
 //img
 export { default as Hero1 } from "./images/img_hero1.webp";

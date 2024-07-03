@@ -40,7 +40,7 @@ export const ContactUsModal = () => {
     const form = new FormData();
     form.append("sender_name", formData.sender_name);
     form.append("message", formData.message);
-    form.append("subject", formData.subject);
+    form.append("subject", `${formData.subject} - ${formData.sender_name}`);
     form.append("recipients", formData.recipients);
     form.append("domain", formData.domain);
     form.append("def_signature", formData.def_signature);
@@ -113,7 +113,10 @@ export const ContactUsModal = () => {
                 </div>
 
                 <div className="flex-1 px-6 py-5 sm:py-6">
-                  <Dialog.Title as="h3" className="md:text-2xl text-xl first-line: font-bold">
+                  <Dialog.Title
+                    as="h3"
+                    className="md:text-2xl text-xl first-line: font-bold"
+                  >
                     We’ll reach out momentarily.
                   </Dialog.Title>
 
