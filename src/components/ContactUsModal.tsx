@@ -113,7 +113,7 @@ export const ContactUsModal = () => {
                 </div>
 
                 <div className="flex-1 px-6 py-5 sm:py-6">
-                  <Dialog.Title as="h3" className="text-2xl font-bold">
+                  <Dialog.Title as="h3" className="md:text-2xl text-xl first-line: font-bold">
                     We’ll reach out momentarily.
                   </Dialog.Title>
 

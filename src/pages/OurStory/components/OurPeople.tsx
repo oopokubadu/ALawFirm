@@ -17,7 +17,7 @@ import {
   NaaModal,
 } from "../../../assets";
 import { GoDotFill } from "react-icons/go";
-import { IoCloseCircle } from "react-icons/io5";
+import { IoCloseCircle, IoCloseCircleOutline } from "react-icons/io5";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 
 const OurPeople = () => {
@@ -228,13 +228,17 @@ const OurPeople = () => {
                     onClick={(e) => e.stopPropagation()}
                   >
                     <div className="relative ">
-                      <IoCloseCircle
+                      <button
+                        type="button"
                         onClick={handleCloseModal}
-                        className="fixed block z-50 top-12 right-8 lg:top-16 lg:right-40 text-3xl text-gray-800 cursor-pointer hover:text-red-500"
-                      />
+                        className="fixed block z-50 top-12 right-8 lg:top-16 lg:right-40 aspect-square cursor-pointer  rounded-xl border-none border-transparent bg-transparent p-2 font-semibold text-text hover:bg-heading/5 focus:bg-heading/5 focus:outline-none focus:ring-2 focus:ring-heading/80 focus:ring-offset-0 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-text child-svg:h-5 child-svg:w-5"
+                      >
+                        <span className="sr-only">Close</span>
+                        <IoCloseCircleOutline className="h-8 w-8" />
+                      </button>
                     </div>
                     {/*content*/}
-                    <div className="bg-white border border-gray-200 shadow relative p-6 max-h-[90vh] overflow-y-auto">
+                    <div className="bg-white border border-gray-200 shadow relative  max-h-[90vh] overflow-y-auto">
                       <div className="bg-[#F9F9F9]">
                         <img
                           className="w-full lg:h-[25rem] object-cover object-center mx-auto"
@@ -258,7 +262,10 @@ const OurPeople = () => {
                             </p>
                           </div>
 
-                          <a href={data.email} className="inline-flex cursor-pointer group transition ease-in-out delay-150  duration-300 items-center justify-center  bg-[#262626] px-4 py-3 text-sm text-white">
+                          <a
+                            href={data.email}
+                            className="inline-flex cursor-pointer group transition ease-in-out delay-150  duration-300 items-center justify-center  bg-[#262626] px-4 py-3 text-sm text-white"
+                          >
                             <span className="group-hover:underline">
                               Send a message
                             </span>

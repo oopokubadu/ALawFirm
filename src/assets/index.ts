@@ -1,5 +1,5 @@
 //Logo
-export { default as LogoWhite } from "./logo/8geeks.svg";
+export { default as LogoWhite } from "./logo/8geeks.png";
 export { default as LogoBlack } from "./logo/logoBlack.svg";
 
 //img
