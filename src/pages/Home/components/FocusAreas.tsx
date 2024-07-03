@@ -17,7 +17,7 @@ const FocusAreas = () => {
       title: "Data Storage & Cloud Computing",
     },
     {
-      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010843/ConsumerElectronics_lqztwx.png",
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720015713/ConsumerElectronics_cm9ipw.png",
       title: "Consumer Electronics",
     },
     {
@@ -37,7 +37,7 @@ const FocusAreas = () => {
       title: "Software",
     },
     {
-      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010836/Biotechnology_rdytiv.png",
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720015039/biotechnology_sh5hey.png",
       title: "Biotechnology",
     },
     {
@@ -49,7 +49,7 @@ const FocusAreas = () => {
       title: "Electronic Gaming",
     },
     {
-      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010848/DigiHealth_ofhhjb.png",
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720015005/digiHealth_awygbq.png",
       title: "Digital Health",
     },
     {
@@ -123,7 +123,7 @@ const FocusAreas = () => {
               <SwiperSlide key={index}>
                 <div className=" bg-white hover:bg-[#F0F0F0] h-[14rem] border-4 border-transparent  hover:border-[#DFDFDF] transition ease-in-out duration-200 p-4">
                   <div className="flex items-center justify-center w-20 h-20 mb-4 rounded-full bg-[#F9F9F9] mx-auto ">
-                    <img src={data.icon} alt="" className="w-10 h-10 mx-auto" />
+                    <img src={data.icon} alt="" className="w-9 mx-auto" />
                   </div>
                   <h6 className="my-5 text-lg text-center  font-medium  text-[#1D1D1D]">
                     {data.title}

@@ -63,7 +63,7 @@ const Specialist = () => {
               data-aos-delay={index * 200}
               className=" bg-white hover:bg-[#F0F0F0] border-4 border-transparent  hover:border-[#DFDFDF] transition ease-in-out duration-200 p-6"
             >
-              <img src={data.icon} alt="" className="w-12 h-12" />
+              <img src={data.icon} alt="" className="" />
               <h6 className="my-5 text-lg  font-medium  text-[#1D1D1D]">
                 {data.title}
               </h6>
