@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="px-4 py-10 bg-white">
-      <div className="mx-auto flex max-w-[85rem] flex-col items-center justify-between space-y-4 lg:flex-row lg:space-y-0 text-[#1D1D1D]">
-        <div className="flex flex-col items-center mx-auto space-y-8 text-center text-sm font-light lg:flex-row lg:space-x-20 lg:space-y-0 lg:text-left">
+      <div className="mx-auto flex max-w-[85rem] flex-col items-center justify-between space-y-4 lg:flex-row sm:space-y-0  px-4 sm:px-6 text-[#1D1D1D]">
+        <div className="flex flex-col items-center w-full mx-auto space-y-8 text-center text-sm  lg:flex-row justify-between lg:text-left">
           <a href="/">
             {/* Logo */}
             <div className="h-7 my-4 text-heading">
