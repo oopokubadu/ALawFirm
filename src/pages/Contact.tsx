@@ -9,7 +9,7 @@ const Contact = () => {
     email: "",
     subject: "Eight Geeks Website",
     message: "",
-    recipients: "opokubadu18@gmail.com",
+    recipients: "info@theeightgeeks.com",
     domain: "theeightgeeks.com",
     def_signature: "False",
   });

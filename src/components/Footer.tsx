@@ -21,7 +21,7 @@ const Footer = () => {
           </div>
           <div className="underline">info@theeightgeeks.com</div>
           <div>Copyright © 2020 - Eight Geeks At Law</div>
-          <Link to="/privacy-policy">Privacy Policy</Link>
+          {/* <Link to="/privacy-policy">Privacy Policy</Link> */}
         </div>
       </div>
     </footer>
