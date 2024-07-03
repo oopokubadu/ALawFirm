@@ -5,19 +5,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const FocusAreas = () => {
   const specialistData = [
     {
-      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720003255/regulatory-Licensing_dkteta.png",
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720016975/ic_regulations_licensing_o15hjq.svg",
       title: "Financial Services & Financial Technology",
     },
     {
-      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010839/Blockchain_sedjnu.png",
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720016434/ic_blockchain_lvmi4v.svg",
       title: "Blockchain & Cryptocurrency",
     },
     {
-      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010846/DataStorage-CloudComp_jmzx6p.png",
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720016435/ic_dataStorage_uatepw.svg",
       title: "Data Storage & Cloud Computing",
     },
     {
-      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720015713/ConsumerElectronics_cm9ipw.png",
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720016126/ic_consumer_electronics_qeyxyg.svg",
       title: "Consumer Electronics",
     },
     {
@@ -25,39 +25,39 @@ const FocusAreas = () => {
       title: "Communications & Networking",
     },
     {
-      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010851/DigiMedia_pbof7s.png",
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720016442/ic_digital_media_eoadrn.svg",
       title: "Digital Media & Entertainment",
     },
     {
-      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010860/Internet_hq1o6r.png",
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720016452/ic_Internet_oyc7kd.svg",
       title: "Internet",
     },
     {
-      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010981/Software_z7xkrx.png",
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720016459/ic_software_urzj4k.svg",
       title: "Software",
     },
     {
-      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720015039/biotechnology_sh5hey.png",
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720016054/ic_biotechnology_ipt9gi.svg",
       title: "Biotechnology",
     },
     {
-      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010835/Aviation_drb3si.png",
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720016430/ic_aviation_spdgxw.svg",
       title: "Aviation",
     },
     {
-      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010855/Gaming_o0inw3.png",
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720016445/ic_electronic_gaming_r5pdvn.svg",
       title: "Electronic Gaming",
     },
     {
-      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720015005/digiHealth_awygbq.png",
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720016440/ic_digital_health_nvvpz2.svg",
       title: "Digital Health",
     },
     {
-      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010831/AgricTech_omzmme.png",
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720016426/ic_agric_slrfqf.svg",
       title: "Agricultural Technology",
     },
     {
-      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010832/AI_c9fygs.png",
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720016427/ic_ai_dk7xzg.svg",
       title: "Artificial Intelligence",
     },
   ];
@@ -123,7 +123,7 @@ const FocusAreas = () => {
               <SwiperSlide key={index}>
                 <div className=" bg-white hover:bg-[#F0F0F0] h-[14rem] border-4 border-transparent  hover:border-[#DFDFDF] transition ease-in-out duration-200 p-4">
                   <div className="flex items-center justify-center w-20 h-20 mb-4 rounded-full bg-[#F9F9F9] mx-auto ">
-                    <img src={data.icon} alt="" className="w-9 mx-auto" />
+                    <img src={data.icon} alt="" className="w-10 h-10 mx-auto" />
                   </div>
                   <h6 className="my-5 text-lg text-center  font-medium  text-[#1D1D1D]">
                     {data.title}
