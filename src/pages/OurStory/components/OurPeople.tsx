@@ -162,7 +162,7 @@ const OurPeople = () => {
                       <button
                         type="button"
                         onClick={handleCloseModal}
-                        className="fixed block z-50 top-12 right-8 lg:top-16 lg:right-40 aspect-square cursor-pointer  rounded-xl border-none border-transparent bg-transparent p-2 font-semibold text-text hover:bg-heading/5 focus:bg-heading/5 focus:outline-none focus:ring-2 focus:ring-heading/80 focus:ring-offset-0 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-text child-svg:h-5 child-svg:w-5"
+                        className="absolute  right-0 top-0 z-50  cursor-pointer  rounded-xl border-none border-transparent bg-transparent p-2 font-semibold text-text hover:bg-heading/5 focus:bg-heading/5 focus:outline-none focus:ring-2 focus:ring-heading/80 focus:ring-offset-0 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-text child-svg:h-5 child-svg:w-5"
                       >
                         <span className="sr-only">Close</span>
                         <IoCloseCircleOutline className="h-8 w-8" />
