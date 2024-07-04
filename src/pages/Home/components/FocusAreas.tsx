@@ -21,7 +21,7 @@ const FocusAreas = () => {
       title: "Consumer Electronics",
     },
     {
-      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720010841/ComNetwork_oywpfr.png",
+      icon: "https://res.cloudinary.com/djmddrfv2/image/upload/v1720117096/ic_communication_networking_hytrmi.svg",
       title: "Communications & Networking",
     },
     {
