@@ -20,7 +20,7 @@ export const ContactUsModal = () => {
     sender_name: "",
     subject: "Eight Geeks Website",
     message: "",
-    recipients: "info@theeightgeeks.com",
+    recipients: "opokubadu18@gmail.com",
     domain: "theeightgeeks.com",
     def_signature: "False",
   });
