@@ -21,7 +21,7 @@ export const ContactUsModal = () => {
     subject: "Eight Geeks Website",
     message: "",
     recipients: "opokubadu18@gmail.com",
-    domain: "theeightgeeks.com",
+    domain: "https://book.gasparkgh.com",
     def_signature: "False",
   });
   const [sendEmail, { isLoading }] = useSendEmailMutation();
