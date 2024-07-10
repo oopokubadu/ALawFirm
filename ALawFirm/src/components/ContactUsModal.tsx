@@ -20,8 +20,8 @@ export const ContactUsModal = () => {
     sender_name: "",
     subject: "Eight Geeks Website",
     message: "",
-    recipients: "opokubadu18@gmail.com",
-    domain: "https://book.gasparkgh.com",
+    recipients: "info@theeightgeeks.com",
+    domain: "theeightgeeks.com",
     def_signature: "False",
   });
   const [sendEmail, { isLoading }] = useSendEmailMutation();

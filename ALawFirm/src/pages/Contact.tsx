@@ -8,8 +8,8 @@ const Contact = () => {
     email: "",
     subject: "Eight Geeks Website",
     message: "",
-    recipients: "opokubadu18@gmail.com",
-    domain: "https://book.gasparkgh.com/",
+    recipients: "info@theeightgeeks.com",
+    domain: "theeightgeeks.com",
     def_signature: "False",
   });
   const [sendEmail, { isLoading }] = useSendEmailMutation();
@@ -36,21 +36,21 @@ const Contact = () => {
     form.append("domain", formData.domain);
     form.append("def_signature", formData.def_signature);
 
-    const confirmationForm = new FormData();
-    confirmationForm.append("sender_name", "info@theeightgeeks.com");
-    confirmationForm.append("subject", `Email Sent - ${formData.sender_name}`);
-    confirmationForm.append(
-      "message",
-      "We have received your email, we will reach out to you momentarily."
-    );
-    confirmationForm.append("recipients", formData.email);
-    confirmationForm.append("domain", formData.domain);
-    confirmationForm.append("def_signature", "False");
+    // const confirmationForm = new FormData();
+    // confirmationForm.append("sender_name", "info@theeightgeeks.com");
+    // confirmationForm.append("subject", `Email Sent - ${formData.sender_name}`);
+    // confirmationForm.append(
+    //   "message",
+    //   "We have received your email, we will reach out to you momentarily."
+    // );
+    // confirmationForm.append("recipients", formData.email);
+    // confirmationForm.append("domain", formData.domain);
+    // confirmationForm.append("def_signature", "False");
 
     try {
       await sendEmail(form);
       toast.success("Email sent successfully!");
-      await sendEmail(confirmationForm);
+      // await sendEmail(confirmationForm);
       // toast.success("Confirmation email sent successfully!");
 
       setFormData((prev) => ({
