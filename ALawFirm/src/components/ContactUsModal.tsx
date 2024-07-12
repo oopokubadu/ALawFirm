@@ -20,7 +20,7 @@ export const ContactUsModal = () => {
     sender_name: "",
     subject: "Eight Geeks Website",
     message: "",
-    recipients: "info@theeightgeeks.com",
+    recipients: "businesscentre@theeightgeeks.com",
     domain: "theeightgeeks.com",
     def_signature: "False",
   });
@@ -153,7 +153,7 @@ export const ContactUsModal = () => {
                         placeholder="Email or Phone? Whichever’s your jam."
                       />
                     </div>
-                    <div className="flex h-16 flex-shrink-0 items-center mb-5 space-x-2  px-6 ">
+                    <div className="flex h-16 flex-shrink-0 items-center mb-5 space-x-2 ">
                       <button
                         type="submit"
                         disabled={!formData.sender_name || !formData.message}

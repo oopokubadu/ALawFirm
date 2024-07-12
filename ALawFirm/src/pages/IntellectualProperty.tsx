@@ -39,8 +39,9 @@ const IntellectualProperty = () => {
               data-aos-offset="200"
               data-aos-duration="1000"
               data-aos-once="true"
-              className="relative flex flex-col p-5 group lg:p-8 transition duration-300 ease-in-out delay-150 bg-[#F9F9F9] hover:bg-[#ED1B24]"
-            >
+              className="relative flex flex-col p-5 group lg:p-8 bg-[#F9F9F9] overflow-hidden"
+              >
+                <div className="absolute top-0 right-full w-full h-full bg-[#ED1B24] transform group-hover:translate-x-full group-hover:scale-102 transition duration-300"></div>
               <div className="absolute bottom-0 right-0">
                 <svg
                   className="fill-[#f9f9f9] stroke-[#262626] group-hover:fill-[#ED1B24] group-hover:stroke-white"
@@ -65,7 +66,7 @@ const IntellectualProperty = () => {
                   </g>
                 </svg>
               </div>
-              <CgQuote className="text-7xl group-hover:text-white" />
+              <CgQuote className="text-7xl group-hover:text-white z-10" />
               <h2 className="text-2xl z-50 font-medium group-hover:text-white">
                 Intellectual property is the fuel of genius, the sustenance of
                 innovation, and the cornerstone of progress.
