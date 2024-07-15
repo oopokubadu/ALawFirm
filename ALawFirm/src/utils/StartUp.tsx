@@ -9,6 +9,7 @@ const StartUp = () => {
       <ScrollToTop />
       <Toaster />
       <AppRouter />
+      {/* div */}
     </div>
   );
 };
